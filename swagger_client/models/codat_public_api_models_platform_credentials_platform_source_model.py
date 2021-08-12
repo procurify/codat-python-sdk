@@ -28,63 +28,63 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'source_type': 'CodatClientsApiClientContractSourceType',
+        'enabled': 'bool',
+        'is_offline_connector': 'bool',
         'key': 'str',
         'logo_url': 'str',
         'name': 'str',
-        'enabled': 'bool',
         'source_id': 'str',
         'integration_id': 'str',
-        'is_offline_connector': 'bool',
+        'source_type': 'CodatClientsApiClientContractSourceType',
         'is_beta': 'bool',
         'supported_environments': 'CodatClientsApiClientContractIntegrationSupportedEnvironments',
         'datatype_features': 'list[CodatClientsApiClientContractDatatypeFeatures]'
     }
 
     attribute_map = {
-        'source_type': 'sourceType',
+        'enabled': 'enabled',
+        'is_offline_connector': 'isOfflineConnector',
         'key': 'key',
         'logo_url': 'logoUrl',
         'name': 'name',
-        'enabled': 'enabled',
         'source_id': 'sourceId',
         'integration_id': 'integrationId',
-        'is_offline_connector': 'isOfflineConnector',
+        'source_type': 'sourceType',
         'is_beta': 'isBeta',
         'supported_environments': 'supportedEnvironments',
         'datatype_features': 'datatypeFeatures'
     }
 
-    def __init__(self, source_type=None, key=None, logo_url=None, name=None, enabled=None, source_id=None, integration_id=None, is_offline_connector=None, is_beta=None, supported_environments=None, datatype_features=None):  # noqa: E501
+    def __init__(self, enabled=None, is_offline_connector=None, key=None, logo_url=None, name=None, source_id=None, integration_id=None, source_type=None, is_beta=None, supported_environments=None, datatype_features=None):  # noqa: E501
         """CodatPublicApiModelsPlatformCredentialsPlatformSourceModel - a model defined in Swagger"""  # noqa: E501
-        self._source_type = None
+        self._enabled = None
+        self._is_offline_connector = None
         self._key = None
         self._logo_url = None
         self._name = None
-        self._enabled = None
         self._source_id = None
         self._integration_id = None
-        self._is_offline_connector = None
+        self._source_type = None
         self._is_beta = None
         self._supported_environments = None
         self._datatype_features = None
         self.discriminator = None
-        if source_type is not None:
-            self.source_type = source_type
+        if enabled is not None:
+            self.enabled = enabled
+        if is_offline_connector is not None:
+            self.is_offline_connector = is_offline_connector
         if key is not None:
             self.key = key
         if logo_url is not None:
             self.logo_url = logo_url
         if name is not None:
             self.name = name
-        if enabled is not None:
-            self.enabled = enabled
         if source_id is not None:
             self.source_id = source_id
         if integration_id is not None:
             self.integration_id = integration_id
-        if is_offline_connector is not None:
-            self.is_offline_connector = is_offline_connector
+        if source_type is not None:
+            self.source_type = source_type
         if is_beta is not None:
             self.is_beta = is_beta
         if supported_environments is not None:
@@ -93,25 +93,46 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(object):
             self.datatype_features = datatype_features
 
     @property
-    def source_type(self):
-        """Gets the source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+    def enabled(self):
+        """Gets the enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
 
 
-        :return: The source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-        :rtype: CodatClientsApiClientContractSourceType
+        :return: The enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+        :rtype: bool
         """
-        return self._source_type
+        return self._enabled
 
-    @source_type.setter
-    def source_type(self, source_type):
-        """Sets the source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.
 
 
-        :param source_type: The source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-        :type: CodatClientsApiClientContractSourceType
+        :param enabled: The enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+        :type: bool
         """
 
-        self._source_type = source_type
+        self._enabled = enabled
+
+    @property
+    def is_offline_connector(self):
+        """Gets the is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+
+
+        :return: The is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_offline_connector
+
+    @is_offline_connector.setter
+    def is_offline_connector(self, is_offline_connector):
+        """Sets the is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.
+
+
+        :param is_offline_connector: The is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_offline_connector = is_offline_connector
 
     @property
     def key(self):
@@ -177,27 +198,6 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(object):
         self._name = name
 
     @property
-    def enabled(self):
-        """Gets the enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-
-
-        :return: The enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-        :rtype: bool
-        """
-        return self._enabled
-
-    @enabled.setter
-    def enabled(self, enabled):
-        """Sets the enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.
-
-
-        :param enabled: The enabled of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-        :type: bool
-        """
-
-        self._enabled = enabled
-
-    @property
     def source_id(self):
         """Gets the source_id of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
 
@@ -240,25 +240,25 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(object):
         self._integration_id = integration_id
 
     @property
-    def is_offline_connector(self):
-        """Gets the is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+    def source_type(self):
+        """Gets the source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
 
 
-        :return: The is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-        :rtype: bool
+        :return: The source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+        :rtype: CodatClientsApiClientContractSourceType
         """
-        return self._is_offline_connector
+        return self._source_type
 
-    @is_offline_connector.setter
-    def is_offline_connector(self, is_offline_connector):
-        """Sets the is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.
+    @source_type.setter
+    def source_type(self, source_type):
+        """Sets the source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.
 
 
-        :param is_offline_connector: The is_offline_connector of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
-        :type: bool
+        :param source_type: The source_type of this CodatPublicApiModelsPlatformCredentialsPlatformSourceModel.  # noqa: E501
+        :type: CodatClientsApiClientContractSourceType
         """
 
-        self._is_offline_connector = is_offline_connector
+        self._source_type = source_type
 
     @property
     def is_beta(self):

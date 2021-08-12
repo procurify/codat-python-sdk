@@ -3,14 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**source_type** | [**CodatClientsApiClientContractSourceType**](CodatClientsApiClientContractSourceType.md) |  | [optional] 
+**enabled** | **bool** |  | [optional] 
+**is_offline_connector** | **bool** |  | [optional] 
 **key** | **str** |  | [optional] 
 **logo_url** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
-**enabled** | **bool** |  | [optional] 
 **source_id** | **str** |  | [optional] 
 **integration_id** | **str** |  | [optional] 
-**is_offline_connector** | **bool** |  | [optional] 
+**source_type** | [**CodatClientsApiClientContractSourceType**](CodatClientsApiClientContractSourceType.md) |  | [optional] 
 **is_beta** | **bool** |  | [optional] 
 **supported_environments** | [**CodatClientsApiClientContractIntegrationSupportedEnvironments**](CodatClientsApiClientContractIntegrationSupportedEnvironments.md) |  | [optional] 
 **datatype_features** | [**list[CodatClientsApiClientContractDatatypeFeatures]**](CodatClientsApiClientContractDatatypeFeatures.md) |  | [optional] 
