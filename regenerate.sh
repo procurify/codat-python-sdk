@@ -2,7 +2,7 @@
 
 set -e
 
-spec_location=https://api-uat.codat.io/swagger/v1/swagger.json
+spec_location=https://api.codat.io/swagger/v1/swagger.json
 
 if ! type swagger-codegen > /dev/null 2>&1; then
   echo 'You need to install the sdk generator, run `brew install swagger-codegen`'
