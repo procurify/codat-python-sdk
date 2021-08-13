@@ -1,4 +1,4 @@
-# swagger_client.CompaniesApi
+# codat_python_sdk.CompaniesApi
 
 All URIs are relative to */*
 
@@ -23,18 +23,18 @@ Deletes a company, this is not reversible.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -74,18 +74,18 @@ Fetch metadata on a single company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -126,20 +126,20 @@ Update a company with a new name
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-body = swagger_client.CodatClientsApiClientContractCompany() # CodatClientsApiClientContractCompany |  (optional)
+body = codat_python_sdk.CodatClientsApiClientContractCompany() # CodatClientsApiClientContractCompany |  (optional)
 
 try:
     # Update a company with a new name
@@ -180,18 +180,18 @@ Fetch settings on a single company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -232,20 +232,20 @@ Update settings on a single company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-body = swagger_client.CodatClientsApiClientContractCompanySettings() # CodatClientsApiClientContractCompanySettings |  (optional)
+body = codat_python_sdk.CodatClientsApiClientContractCompanySettings() # CodatClientsApiClientContractCompanySettings |  (optional)
 
 try:
     # Update settings on a single company.
@@ -286,18 +286,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -337,20 +337,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-body = swagger_client.CodatClientsApiClientContractCompanySyncSettings() # CodatClientsApiClientContractCompanySyncSettings |  (optional)
+body = codat_python_sdk.CodatClientsApiClientContractCompanySyncSettings() # CodatClientsApiClientContractCompanySyncSettings |  (optional)
 
 try:
     api_instance.companies_company_id_sync_settings_post(company_id, body=body)
@@ -389,18 +389,18 @@ Fetch a list of all companies metadata with accounting links on the Codat platfo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
 page = 1 # int |  (default to 1)
 page_size = 100 # int |  (optional) (default to 100)
 query = 'query_example' # str |  (optional)
@@ -447,19 +447,19 @@ Initiate the process of onboarding a new company on the Codat platform
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CompaniesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CodatPublicApiModelsCompanyAddCompanyModel() # CodatPublicApiModelsCompanyAddCompanyModel |  (optional)
+api_instance = codat_python_sdk.CompaniesApi(codat_python_sdk.ApiClient(configuration))
+body = codat_python_sdk.CodatPublicApiModelsCompanyAddCompanyModel() # CodatPublicApiModelsCompanyAddCompanyModel |  (optional)
 
 try:
     # Initiate the process of onboarding a new company on the Codat platform

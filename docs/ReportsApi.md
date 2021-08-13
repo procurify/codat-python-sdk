@@ -1,4 +1,4 @@
-# swagger_client.ReportsApi
+# codat_python_sdk.ReportsApi
 
 All URIs are relative to */*
 
@@ -19,18 +19,18 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ReportsApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -70,18 +70,18 @@ Gets the aged creditor report for a company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ReportsApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 report_date = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
 number_of_periods = 56 # int |  (optional)
@@ -128,18 +128,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ReportsApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -179,18 +179,18 @@ Gets the aged debtor report for a company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ReportsApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 report_date = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
 number_of_periods = 56 # int |  (optional)
@@ -237,18 +237,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ReportsApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 from_date = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
 to_date = '2013-10-20T19:20:30+01:00' # datetime |  (optional)

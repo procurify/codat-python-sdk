@@ -9,13 +9,14 @@ if ! type swagger-codegen > /dev/null 2>&1; then
   exit 1
 fi
 
-mv README.md custom_README.md
+cp README.md custom_README.md
 
 swagger-codegen generate \
   --input-spec $spec_location \
   --lang python \
   --git-user-id procurify \
-  --git-repo-id codat-python-sdk
+  --git-repo-id codat-python-sdk \
+  -DpackageName=codat_python_sdk
 
 mv README.md generated_info.md
 

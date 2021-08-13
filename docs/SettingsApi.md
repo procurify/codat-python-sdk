@@ -1,4 +1,4 @@
-# swagger_client.SettingsApi
+# codat_python_sdk.SettingsApi
 
 All URIs are relative to */*
 
@@ -18,18 +18,18 @@ Fetch your settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.SettingsApi(codat_python_sdk.ApiClient(configuration))
 
 try:
     # Fetch your settings
@@ -66,18 +66,18 @@ Fetch your organisations integration settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.SettingsApi(codat_python_sdk.ApiClient(configuration))
 integration_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
 try:
@@ -118,20 +118,20 @@ Update your organisations integration settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingsApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.SettingsApi(codat_python_sdk.ApiClient(configuration))
 integration_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-body = swagger_client.CodatPublicApiModelsClientsIntegrationSettingsPatchModel() # CodatPublicApiModelsClientsIntegrationSettingsPatchModel |  (optional)
+body = codat_python_sdk.CodatPublicApiModelsClientsIntegrationSettingsPatchModel() # CodatPublicApiModelsClientsIntegrationSettingsPatchModel |  (optional)
 
 try:
     # Update your organisations integration settings
@@ -172,19 +172,19 @@ Update your settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CodatPublicApiModelsClientsClientSettingsPatchModel() # CodatPublicApiModelsClientsClientSettingsPatchModel |  (optional)
+api_instance = codat_python_sdk.SettingsApi(codat_python_sdk.ApiClient(configuration))
+body = codat_python_sdk.CodatPublicApiModelsClientsClientSettingsPatchModel() # CodatPublicApiModelsClientsClientSettingsPatchModel |  (optional)
 
 try:
     # Update your settings

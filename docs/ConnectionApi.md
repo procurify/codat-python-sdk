@@ -1,4 +1,4 @@
-# swagger_client.ConnectionApi
+# codat_python_sdk.ConnectionApi
 
 All URIs are relative to */*
 
@@ -21,18 +21,18 @@ This revokes and removes a data connection from being listed as a company's conn
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectionApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ConnectionApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 connection_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
@@ -75,18 +75,18 @@ Retrieve a single data source connected to a single company, including its conne
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectionApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ConnectionApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 connection_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 
@@ -131,21 +131,21 @@ This revokes a company’s access to a data source, but the data connection is s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectionApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ConnectionApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 connection_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-body = swagger_client.CodatPublicApiModelsCompanyPatchDataConnectionModel() # CodatPublicApiModelsCompanyPatchDataConnectionModel |  (optional)
+body = codat_python_sdk.CodatPublicApiModelsCompanyPatchDataConnectionModel() # CodatPublicApiModelsCompanyPatchDataConnectionModel |  (optional)
 
 try:
     # Disconnect a data source from a company
@@ -187,18 +187,18 @@ Retrieve all data sources connected to a single company, including their connect
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectionApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ConnectionApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 page = 1 # int |  (default to 1)
 page_size = 100 # int |  (optional) (default to 100)
@@ -249,18 +249,18 @@ This creates a new data connection in the PendingAuth state. You can get a list 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectionApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.ConnectionApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 body = 'body_example' # str |  (optional)
 

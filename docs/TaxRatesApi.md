@@ -1,4 +1,4 @@
-# swagger_client.TaxRatesApi
+# codat_python_sdk.TaxRatesApi
 
 All URIs are relative to */*
 
@@ -16,18 +16,18 @@ Gets the latest tax rates for a given company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TaxRatesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.TaxRatesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 page = 1 # int |  (default to 1)
 page_size = 100 # int |  (optional) (default to 100)
@@ -76,18 +76,18 @@ Gets the specified tax rate for a given company.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: API Key Auth
-configuration = swagger_client.Configuration()
+configuration = codat_python_sdk.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TaxRatesApi(swagger_client.ApiClient(configuration))
+api_instance = codat_python_sdk.TaxRatesApi(codat_python_sdk.ApiClient(configuration))
 company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
 tax_rate_id = 'tax_rate_id_example' # str | 
 
