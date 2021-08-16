@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatRulesContractsResponsesAlertPagedResponseHrefModel**](CodatRulesContractsResponsesAlertPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatRulesContractsResponsesAlertPagedResponseHrefModel**](CodatRulesContractsResponsesAlertPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatRulesContractsResponsesAlertPagedResponseHrefModel**](CodatRulesContractsResponsesAlertPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatRulesContractsResponsesAlertPagedResponseHrefModel**](CodatRulesContractsResponsesAlertPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatRulesContractsResponsesAlertPagedResponseHrefModel**](CodatRulesContractsResponsesAlertPagedResponseHrefModel.md) |  | [optional] 

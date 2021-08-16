@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel**](CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel**](CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel**](CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel**](CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel**](CodatPublicApiModelsDataTrackingCategoryPagedResponseHrefModel.md) |  | [optional] 

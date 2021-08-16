@@ -80,7 +80,7 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseLin
         """
         lazy_import()
         return {
-            '_self': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel,),  # noqa: E501
+            'self': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel,),  # noqa: E501
             'current': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel,),  # noqa: E501
             'next': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel,),  # noqa: E501
             'previous': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseLin
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseLin
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseLin
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel): [optional]  # noqa: E501

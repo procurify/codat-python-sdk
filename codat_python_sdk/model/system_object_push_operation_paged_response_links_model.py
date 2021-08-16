@@ -80,7 +80,7 @@ class SystemObjectPushOperationPagedResponseLinksModel(ModelNormal):
         """
         lazy_import()
         return {
-            '_self': (SystemObjectPushOperationPagedResponseHrefModel,),  # noqa: E501
+            'self': (SystemObjectPushOperationPagedResponseHrefModel,),  # noqa: E501
             'current': (SystemObjectPushOperationPagedResponseHrefModel,),  # noqa: E501
             'next': (SystemObjectPushOperationPagedResponseHrefModel,),  # noqa: E501
             'previous': (SystemObjectPushOperationPagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class SystemObjectPushOperationPagedResponseLinksModel(ModelNormal):
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class SystemObjectPushOperationPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
+            self (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
             current (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
             next (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
             previous (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class SystemObjectPushOperationPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
+            self (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
             current (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
             next (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501
             previous (SystemObjectPushOperationPagedResponseHrefModel): [optional]  # noqa: E501

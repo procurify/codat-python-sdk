@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel**](CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel**](CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel**](CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel**](CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel**](CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel.md) |  | [optional] 

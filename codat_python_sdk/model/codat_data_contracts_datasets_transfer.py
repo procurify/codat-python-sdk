@@ -90,7 +90,7 @@ class CodatDataContractsDatasetsTransfer(ModelNormal):
             'description': (str, none_type,),  # noqa: E501
             'contact_ref': (CodatDataContractsDatasetsContactRef,),  # noqa: E501
             'date': (datetime,),  # noqa: E501
-            '_from': (CodatDataContractsDatasetsFromAccount,),  # noqa: E501
+            'from': (CodatDataContractsDatasetsFromAccount,),  # noqa: E501
             'to': (CodatDataContractsDatasetsToAccount,),  # noqa: E501
             'tracking_category_refs': ([CodatDataContractsDatasetsTrackingCategoryRef], none_type,),  # noqa: E501
             'modified_date': (datetime, none_type,),  # noqa: E501
@@ -107,7 +107,7 @@ class CodatDataContractsDatasetsTransfer(ModelNormal):
         'description': 'description',  # noqa: E501
         'contact_ref': 'contactRef',  # noqa: E501
         'date': 'date',  # noqa: E501
-        '_from': 'from',  # noqa: E501
+        'from': 'from',  # noqa: E501
         'to': 'to',  # noqa: E501
         'tracking_category_refs': 'trackingCategoryRefs',  # noqa: E501
         'modified_date': 'modifiedDate',  # noqa: E501
@@ -159,7 +159,7 @@ class CodatDataContractsDatasetsTransfer(ModelNormal):
             description (str, none_type): [optional]  # noqa: E501
             contact_ref (CodatDataContractsDatasetsContactRef): [optional]  # noqa: E501
             date (datetime): [optional]  # noqa: E501
-            _from (CodatDataContractsDatasetsFromAccount): [optional]  # noqa: E501
+            from (CodatDataContractsDatasetsFromAccount): [optional]  # noqa: E501
             to (CodatDataContractsDatasetsToAccount): [optional]  # noqa: E501
             tracking_category_refs ([CodatDataContractsDatasetsTrackingCategoryRef], none_type): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
@@ -249,7 +249,7 @@ class CodatDataContractsDatasetsTransfer(ModelNormal):
             description (str, none_type): [optional]  # noqa: E501
             contact_ref (CodatDataContractsDatasetsContactRef): [optional]  # noqa: E501
             date (datetime): [optional]  # noqa: E501
-            _from (CodatDataContractsDatasetsFromAccount): [optional]  # noqa: E501
+            from (CodatDataContractsDatasetsFromAccount): [optional]  # noqa: E501
             to (CodatDataContractsDatasetsToAccount): [optional]  # noqa: E501
             tracking_category_refs ([CodatDataContractsDatasetsTrackingCategoryRef], none_type): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501

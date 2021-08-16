@@ -80,7 +80,7 @@ class CodatDataContractsDatasetsItemPagedResponseLinksModel(ModelNormal):
         """
         lazy_import()
         return {
-            '_self': (CodatDataContractsDatasetsItemPagedResponseHrefModel,),  # noqa: E501
+            'self': (CodatDataContractsDatasetsItemPagedResponseHrefModel,),  # noqa: E501
             'current': (CodatDataContractsDatasetsItemPagedResponseHrefModel,),  # noqa: E501
             'next': (CodatDataContractsDatasetsItemPagedResponseHrefModel,),  # noqa: E501
             'previous': (CodatDataContractsDatasetsItemPagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class CodatDataContractsDatasetsItemPagedResponseLinksModel(ModelNormal):
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class CodatDataContractsDatasetsItemPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class CodatDataContractsDatasetsItemPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatDataContractsDatasetsItemPagedResponseHrefModel): [optional]  # noqa: E501

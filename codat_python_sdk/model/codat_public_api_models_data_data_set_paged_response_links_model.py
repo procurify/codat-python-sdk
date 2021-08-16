@@ -80,7 +80,7 @@ class CodatPublicApiModelsDataDataSetPagedResponseLinksModel(ModelNormal):
         """
         lazy_import()
         return {
-            '_self': (CodatPublicApiModelsDataDataSetPagedResponseHrefModel,),  # noqa: E501
+            'self': (CodatPublicApiModelsDataDataSetPagedResponseHrefModel,),  # noqa: E501
             'current': (CodatPublicApiModelsDataDataSetPagedResponseHrefModel,),  # noqa: E501
             'next': (CodatPublicApiModelsDataDataSetPagedResponseHrefModel,),  # noqa: E501
             'previous': (CodatPublicApiModelsDataDataSetPagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class CodatPublicApiModelsDataDataSetPagedResponseLinksModel(ModelNormal):
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class CodatPublicApiModelsDataDataSetPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class CodatPublicApiModelsDataDataSetPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsDataDataSetPagedResponseHrefModel): [optional]  # noqa: E501

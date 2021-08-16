@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatDataContractsDatasetsTaxRatePagedResponseHrefModel**](CodatDataContractsDatasetsTaxRatePagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatDataContractsDatasetsTaxRatePagedResponseHrefModel**](CodatDataContractsDatasetsTaxRatePagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatDataContractsDatasetsTaxRatePagedResponseHrefModel**](CodatDataContractsDatasetsTaxRatePagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatDataContractsDatasetsTaxRatePagedResponseHrefModel**](CodatDataContractsDatasetsTaxRatePagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatDataContractsDatasetsTaxRatePagedResponseHrefModel**](CodatDataContractsDatasetsTaxRatePagedResponseHrefModel.md) |  | [optional] 

@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatPublicApiModelsRulesRulePagedResponseHrefModel**](CodatPublicApiModelsRulesRulePagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatPublicApiModelsRulesRulePagedResponseHrefModel**](CodatPublicApiModelsRulesRulePagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatPublicApiModelsRulesRulePagedResponseHrefModel**](CodatPublicApiModelsRulesRulePagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatPublicApiModelsRulesRulePagedResponseHrefModel**](CodatPublicApiModelsRulesRulePagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatPublicApiModelsRulesRulePagedResponseHrefModel**](CodatPublicApiModelsRulesRulePagedResponseHrefModel.md) |  | [optional] 

@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel**](CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel**](CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel**](CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel**](CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel**](CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseHrefModel.md) |  | [optional] 

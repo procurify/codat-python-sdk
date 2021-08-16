@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel**](CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel**](CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel**](CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel**](CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel**](CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseHrefModel.md) |  | [optional] 

@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel**](CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel**](CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel**](CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel**](CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel**](CodatDataContractsDatasetsCommerceProductPagedResponseHrefModel.md) |  | [optional] 

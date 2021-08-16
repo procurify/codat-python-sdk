@@ -80,7 +80,7 @@ class CodatPublicApiModelsRulesRulePagedResponseLinksModel(ModelNormal):
         """
         lazy_import()
         return {
-            '_self': (CodatPublicApiModelsRulesRulePagedResponseHrefModel,),  # noqa: E501
+            'self': (CodatPublicApiModelsRulesRulePagedResponseHrefModel,),  # noqa: E501
             'current': (CodatPublicApiModelsRulesRulePagedResponseHrefModel,),  # noqa: E501
             'next': (CodatPublicApiModelsRulesRulePagedResponseHrefModel,),  # noqa: E501
             'previous': (CodatPublicApiModelsRulesRulePagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class CodatPublicApiModelsRulesRulePagedResponseLinksModel(ModelNormal):
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class CodatPublicApiModelsRulesRulePagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class CodatPublicApiModelsRulesRulePagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsRulesRulePagedResponseHrefModel): [optional]  # noqa: E501

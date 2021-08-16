@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **description** | **str, none_type** |  | [optional] 
 **contact_ref** | [**CodatDataContractsDatasetsContactRef**](CodatDataContractsDatasetsContactRef.md) |  | [optional] 
 **date** | **datetime** |  | [optional] 
-**_from** | [**CodatDataContractsDatasetsFromAccount**](CodatDataContractsDatasetsFromAccount.md) |  | [optional] 
+**from** | [**CodatDataContractsDatasetsFromAccount**](CodatDataContractsDatasetsFromAccount.md) |  | [optional] 
 **to** | [**CodatDataContractsDatasetsToAccount**](CodatDataContractsDatasetsToAccount.md) |  | [optional] 
 **tracking_category_refs** | [**[CodatDataContractsDatasetsTrackingCategoryRef], none_type**](CodatDataContractsDatasetsTrackingCategoryRef.md) |  | [optional] 
 **modified_date** | **datetime, none_type** |  | [optional] 

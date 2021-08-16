@@ -13,6 +13,7 @@ cp README.md custom_README.md
 
 openapi-generator generate \
   --skip-validate-spec \
+  --reserved-words-mappings self=self,from=from \
   --input-spec $spec_location \
   --generator-name python \
   --git-user-id procurify \

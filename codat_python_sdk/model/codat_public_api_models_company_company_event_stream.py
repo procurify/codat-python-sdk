@@ -82,7 +82,7 @@ class CodatPublicApiModelsCompanyCompanyEventStream(ModelNormal):
         return {
             'company_id': (str,),  # noqa: E501
             'data': ([CodatPublicApiModelsCompanyCompanyEventStreamItem],),  # noqa: E501
-            '_from': (datetime, none_type,),  # noqa: E501
+            'from': (datetime, none_type,),  # noqa: E501
             'to': (datetime, none_type,),  # noqa: E501
         }
 
@@ -94,7 +94,7 @@ class CodatPublicApiModelsCompanyCompanyEventStream(ModelNormal):
     attribute_map = {
         'company_id': 'companyId',  # noqa: E501
         'data': 'data',  # noqa: E501
-        '_from': 'from',  # noqa: E501
+        'from': 'from',  # noqa: E501
         'to': 'to',  # noqa: E501
     }
 
@@ -143,7 +143,7 @@ class CodatPublicApiModelsCompanyCompanyEventStream(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _from (datetime, none_type): [optional]  # noqa: E501
+            from (datetime, none_type): [optional]  # noqa: E501
             to (datetime, none_type): [optional]  # noqa: E501
         """
 
@@ -232,7 +232,7 @@ class CodatPublicApiModelsCompanyCompanyEventStream(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _from (datetime, none_type): [optional]  # noqa: E501
+            from (datetime, none_type): [optional]  # noqa: E501
             to (datetime, none_type): [optional]  # noqa: E501
         """
 

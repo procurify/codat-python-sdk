@@ -226,7 +226,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
             data_type="data_type_example",
         ),
         date=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        _from=CodatDataContractsDatasetsFromAccount(
+        from=CodatDataContractsDatasetsFromAccount(
             account_ref=CodatDataContractsDatasetsRecordRef(
                 id="id_example",
                 data_type="data_type_example",

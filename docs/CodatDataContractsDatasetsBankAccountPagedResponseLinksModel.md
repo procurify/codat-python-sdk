@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**CodatDataContractsDatasetsBankAccountPagedResponseHrefModel**](CodatDataContractsDatasetsBankAccountPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**CodatDataContractsDatasetsBankAccountPagedResponseHrefModel**](CodatDataContractsDatasetsBankAccountPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**CodatDataContractsDatasetsBankAccountPagedResponseHrefModel**](CodatDataContractsDatasetsBankAccountPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**CodatDataContractsDatasetsBankAccountPagedResponseHrefModel**](CodatDataContractsDatasetsBankAccountPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**CodatDataContractsDatasetsBankAccountPagedResponseHrefModel**](CodatDataContractsDatasetsBankAccountPagedResponseHrefModel.md) |  | [optional] 

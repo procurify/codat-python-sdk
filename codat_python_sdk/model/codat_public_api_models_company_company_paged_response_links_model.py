@@ -80,7 +80,7 @@ class CodatPublicApiModelsCompanyCompanyPagedResponseLinksModel(ModelNormal):
         """
         lazy_import()
         return {
-            '_self': (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel,),  # noqa: E501
+            'self': (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel,),  # noqa: E501
             'current': (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel,),  # noqa: E501
             'next': (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel,),  # noqa: E501
             'previous': (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class CodatPublicApiModelsCompanyCompanyPagedResponseLinksModel(ModelNormal):
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class CodatPublicApiModelsCompanyCompanyPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class CodatPublicApiModelsCompanyCompanyPagedResponseLinksModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatPublicApiModelsCompanyCompanyPagedResponseHrefModel): [optional]  # noqa: E501

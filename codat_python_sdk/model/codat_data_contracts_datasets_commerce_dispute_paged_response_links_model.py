@@ -80,7 +80,7 @@ class CodatDataContractsDatasetsCommerceDisputePagedResponseLinksModel(ModelNorm
         """
         lazy_import()
         return {
-            '_self': (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel,),  # noqa: E501
+            'self': (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel,),  # noqa: E501
             'current': (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel,),  # noqa: E501
             'next': (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel,),  # noqa: E501
             'previous': (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel,),  # noqa: E501
@@ -92,7 +92,7 @@ class CodatDataContractsDatasetsCommerceDisputePagedResponseLinksModel(ModelNorm
 
 
     attribute_map = {
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
         'current': 'current',  # noqa: E501
         'next': 'next',  # noqa: E501
         'previous': 'previous',  # noqa: E501
@@ -139,7 +139,7 @@ class CodatDataContractsDatasetsCommerceDisputePagedResponseLinksModel(ModelNorm
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
@@ -224,7 +224,7 @@ class CodatDataContractsDatasetsCommerceDisputePagedResponseLinksModel(ModelNorm
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            _self (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
+            self (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
             current (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
             next (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501
             previous (CodatDataContractsDatasetsCommerceDisputePagedResponseHrefModel): [optional]  # noqa: E501

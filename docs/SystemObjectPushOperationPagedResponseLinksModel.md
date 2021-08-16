@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_self** | [**SystemObjectPushOperationPagedResponseHrefModel**](SystemObjectPushOperationPagedResponseHrefModel.md) |  | [optional] 
+**self** | [**SystemObjectPushOperationPagedResponseHrefModel**](SystemObjectPushOperationPagedResponseHrefModel.md) |  | [optional] 
 **current** | [**SystemObjectPushOperationPagedResponseHrefModel**](SystemObjectPushOperationPagedResponseHrefModel.md) |  | [optional] 
 **next** | [**SystemObjectPushOperationPagedResponseHrefModel**](SystemObjectPushOperationPagedResponseHrefModel.md) |  | [optional] 
 **previous** | [**SystemObjectPushOperationPagedResponseHrefModel**](SystemObjectPushOperationPagedResponseHrefModel.md) |  | [optional] 
