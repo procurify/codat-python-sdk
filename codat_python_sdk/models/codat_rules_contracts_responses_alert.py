@@ -33,7 +33,7 @@ class CodatRulesContractsResponsesAlert(object):
         'company_id': 'str',
         'raised_on_utc': 'datetime',
         'resolved_on_utc': 'datetime',
-        'data': 'Object'
+        'data': 'object'
     }
 
     attribute_map = {

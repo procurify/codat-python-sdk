@@ -28,7 +28,7 @@ class SystemObjectPushOperation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'Object',
+        'data': 'object',
         'data_type': 'str',
         'company_id': 'str',
         'push_operation_key': 'str',
