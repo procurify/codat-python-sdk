@@ -1,14 +1,16 @@
 # CodatPublicApiModelsMetadataValidCategoryType
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **str** |  | [optional] 
-**subtype** | **str** |  | [optional] 
-**subtype_display_name** | **str** |  | [optional] 
-**detail_type** | **str** |  | [optional] 
-**detail_type_display_name** | **str** |  | [optional] 
-**detail_type_description** | **str** |  | [optional] 
+**type** | **str, none_type** |  | [optional] 
+**subtype** | **str, none_type** |  | [optional] 
+**subtype_display_name** | **str, none_type** |  | [optional] 
+**detail_type** | **str, none_type** |  | [optional] 
+**detail_type_display_name** | **str, none_type** |  | [optional] 
+**detail_type_description** | **str, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

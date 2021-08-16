@@ -1,12 +1,14 @@
 # CodatDataContractsDatasetsBillPaymentLineLink
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | [**CodatDataContractsDatasetsBillPaymentLinkType**](CodatDataContractsDatasetsBillPaymentLinkType.md) |  | 
-**id** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**currency_rate** | **float** |  | [optional] 
+**id** | **str, none_type** |  | [optional] 
+**amount** | **float, none_type** |  | [optional] 
+**currency_rate** | **float, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

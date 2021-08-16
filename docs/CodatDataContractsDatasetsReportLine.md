@@ -1,12 +1,14 @@
 # CodatDataContractsDatasetsReportLine
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
 **value** | **float** |  | 
-**items** | [**list[CodatDataContractsDatasetsReportLine]**](CodatDataContractsDatasetsReportLine.md) |  | [optional] 
+**account_id** | **str, none_type** |  | [optional] 
+**name** | **str, none_type** |  | [optional] 
+**items** | [**[CodatDataContractsDatasetsReportLine], none_type**](CodatDataContractsDatasetsReportLine.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 
