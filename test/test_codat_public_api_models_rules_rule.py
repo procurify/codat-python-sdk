@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_public_api_models_rules_rule import CodatPublicApiModelsRulesRule  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_public_api_models_rules_rule import CodatPublicApiModelsRulesRule  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatPublicApiModelsRulesRule(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatPublicApiModelsRulesRule(unittest.TestCase):
     def testCodatPublicApiModelsRulesRule(self):
         """Test CodatPublicApiModelsRulesRule"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_public_api_models_rules_rule.CodatPublicApiModelsRulesRule()  # noqa: E501
+        # model = codat_python_sdk.models.codat_public_api_models_rules_rule.CodatPublicApiModelsRulesRule()  # noqa: E501
         pass
 
 

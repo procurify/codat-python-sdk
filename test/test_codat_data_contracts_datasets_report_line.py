@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_data_contracts_datasets_report_line import CodatDataContractsDatasetsReportLine  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_data_contracts_datasets_report_line import CodatDataContractsDatasetsReportLine  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatDataContractsDatasetsReportLine(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatDataContractsDatasetsReportLine(unittest.TestCase):
     def testCodatDataContractsDatasetsReportLine(self):
         """Test CodatDataContractsDatasetsReportLine"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_data_contracts_datasets_report_line.CodatDataContractsDatasetsReportLine()  # noqa: E501
+        # model = codat_python_sdk.models.codat_data_contracts_datasets_report_line.CodatDataContractsDatasetsReportLine()  # noqa: E501
         pass
 
 

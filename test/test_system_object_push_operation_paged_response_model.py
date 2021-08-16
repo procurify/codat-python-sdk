@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.system_object_push_operation_paged_response_model import SystemObjectPushOperationPagedResponseModel  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.system_object_push_operation_paged_response_model import SystemObjectPushOperationPagedResponseModel  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestSystemObjectPushOperationPagedResponseModel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSystemObjectPushOperationPagedResponseModel(unittest.TestCase):
     def testSystemObjectPushOperationPagedResponseModel(self):
         """Test SystemObjectPushOperationPagedResponseModel"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.system_object_push_operation_paged_response_model.SystemObjectPushOperationPagedResponseModel()  # noqa: E501
+        # model = codat_python_sdk.models.system_object_push_operation_paged_response_model.SystemObjectPushOperationPagedResponseModel()  # noqa: E501
         pass
 
 

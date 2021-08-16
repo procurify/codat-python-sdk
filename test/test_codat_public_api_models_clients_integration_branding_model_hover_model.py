@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_public_api_models_clients_integration_branding_model_hover_model import CodatPublicApiModelsClientsIntegrationBrandingModelHoverModel  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_public_api_models_clients_integration_branding_model_hover_model import CodatPublicApiModelsClientsIntegrationBrandingModelHoverModel  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatPublicApiModelsClientsIntegrationBrandingModelHoverModel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatPublicApiModelsClientsIntegrationBrandingModelHoverModel(unittest
     def testCodatPublicApiModelsClientsIntegrationBrandingModelHoverModel(self):
         """Test CodatPublicApiModelsClientsIntegrationBrandingModelHoverModel"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_public_api_models_clients_integration_branding_model_hover_model.CodatPublicApiModelsClientsIntegrationBrandingModelHoverModel()  # noqa: E501
+        # model = codat_python_sdk.models.codat_public_api_models_clients_integration_branding_model_hover_model.CodatPublicApiModelsClientsIntegrationBrandingModelHoverModel()  # noqa: E501
         pass
 
 

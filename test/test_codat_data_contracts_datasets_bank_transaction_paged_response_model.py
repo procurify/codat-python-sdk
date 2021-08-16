@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_data_contracts_datasets_bank_transaction_paged_response_model import CodatDataContractsDatasetsBankTransactionPagedResponseModel  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_data_contracts_datasets_bank_transaction_paged_response_model import CodatDataContractsDatasetsBankTransactionPagedResponseModel  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatDataContractsDatasetsBankTransactionPagedResponseModel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatDataContractsDatasetsBankTransactionPagedResponseModel(unittest.T
     def testCodatDataContractsDatasetsBankTransactionPagedResponseModel(self):
         """Test CodatDataContractsDatasetsBankTransactionPagedResponseModel"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_data_contracts_datasets_bank_transaction_paged_response_model.CodatDataContractsDatasetsBankTransactionPagedResponseModel()  # noqa: E501
+        # model = codat_python_sdk.models.codat_data_contracts_datasets_bank_transaction_paged_response_model.CodatDataContractsDatasetsBankTransactionPagedResponseModel()  # noqa: E501
         pass
 
 

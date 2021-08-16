@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_public_api_models_data_tracking_category_paged_response_model import CodatPublicApiModelsDataTrackingCategoryPagedResponseModel  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_public_api_models_data_tracking_category_paged_response_model import CodatPublicApiModelsDataTrackingCategoryPagedResponseModel  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatPublicApiModelsDataTrackingCategoryPagedResponseModel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatPublicApiModelsDataTrackingCategoryPagedResponseModel(unittest.Te
     def testCodatPublicApiModelsDataTrackingCategoryPagedResponseModel(self):
         """Test CodatPublicApiModelsDataTrackingCategoryPagedResponseModel"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_public_api_models_data_tracking_category_paged_response_model.CodatPublicApiModelsDataTrackingCategoryPagedResponseModel()  # noqa: E501
+        # model = codat_python_sdk.models.codat_public_api_models_data_tracking_category_paged_response_model.CodatPublicApiModelsDataTrackingCategoryPagedResponseModel()  # noqa: E501
         pass
 
 

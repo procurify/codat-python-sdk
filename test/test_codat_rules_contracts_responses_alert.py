@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_rules_contracts_responses_alert import CodatRulesContractsResponsesAlert  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_rules_contracts_responses_alert import CodatRulesContractsResponsesAlert  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatRulesContractsResponsesAlert(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatRulesContractsResponsesAlert(unittest.TestCase):
     def testCodatRulesContractsResponsesAlert(self):
         """Test CodatRulesContractsResponsesAlert"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_rules_contracts_responses_alert.CodatRulesContractsResponsesAlert()  # noqa: E501
+        # model = codat_python_sdk.models.codat_rules_contracts_responses_alert.CodatRulesContractsResponsesAlert()  # noqa: E501
         pass
 
 

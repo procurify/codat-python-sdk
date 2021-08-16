@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.codat_data_contracts_push_push_option_choice import CodatDataContractsPushPushOptionChoice  # noqa: E501
-from swagger_client.rest import ApiException
+import codat_python_sdk
+from codat_python_sdk.models.codat_data_contracts_push_push_option_choice import CodatDataContractsPushPushOptionChoice  # noqa: E501
+from codat_python_sdk.rest import ApiException
 
 
 class TestCodatDataContractsPushPushOptionChoice(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCodatDataContractsPushPushOptionChoice(unittest.TestCase):
     def testCodatDataContractsPushPushOptionChoice(self):
         """Test CodatDataContractsPushPushOptionChoice"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.codat_data_contracts_push_push_option_choice.CodatDataContractsPushPushOptionChoice()  # noqa: E501
+        # model = codat_python_sdk.models.codat_data_contracts_push_push_option_choice.CodatDataContractsPushPushOptionChoice()  # noqa: E501
         pass
 
 
