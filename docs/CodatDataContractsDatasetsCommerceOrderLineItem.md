@@ -1,9 +1,10 @@
 # CodatDataContractsDatasetsCommerceOrderLineItem
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
+**id** | **str, none_type** |  | [optional] 
 **quantity** | **float** |  | [optional] 
 **tax_percentage** | **float** |  | [optional] 
 **total_amount** | **float** |  | [optional] 
@@ -11,7 +12,8 @@ Name | Type | Description | Notes
 **unit_price** | **float** |  | [optional] 
 **product_ref** | [**CodatDataContractsDatasetsCommerceProductRef**](CodatDataContractsDatasetsCommerceProductRef.md) |  | [optional] 
 **product_variant_ref** | [**CodatDataContractsDatasetsCommerceProductRef**](CodatDataContractsDatasetsCommerceProductRef.md) |  | [optional] 
-**discount_allocations** | [**list[CodatDataContractsDatasetsCommerceDiscountAllocation]**](CodatDataContractsDatasetsCommerceDiscountAllocation.md) |  | [optional] 
+**discount_allocations** | [**[CodatDataContractsDatasetsCommerceDiscountAllocation], none_type**](CodatDataContractsDatasetsCommerceDiscountAllocation.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

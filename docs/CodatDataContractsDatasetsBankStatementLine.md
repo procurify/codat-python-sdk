@@ -1,17 +1,19 @@
 # CodatDataContractsDatasetsBankStatementLine
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**_date** | **datetime** |  | 
-**description** | **str** |  | [optional] 
+**date** | **datetime** |  | 
 **reconciled** | **bool** |  | 
 **amount** | **float** |  | 
 **balance** | **float** |  | 
 **transaction_type** | [**CodatDataContractsDatasetsTransactionType**](CodatDataContractsDatasetsTransactionType.md) |  | 
-**modified_date** | **datetime** |  | [optional] 
-**source_modified_date** | **datetime** |  | [optional] 
+**id** | **str, none_type** |  | [optional] 
+**description** | **str, none_type** |  | [optional] 
+**modified_date** | **datetime, none_type** |  | [optional] 
+**source_modified_date** | **datetime, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

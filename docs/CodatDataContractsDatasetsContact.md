@@ -1,14 +1,16 @@
 # CodatDataContractsDatasetsContact
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** |  | [optional] 
-**email** | **str** |  | [optional] 
-**phone** | [**list[CodatDataContractsDatasetsPhone]**](CodatDataContractsDatasetsPhone.md) |  | [optional] 
-**address** | [**CodatDataContractsDatasetsAddress**](CodatDataContractsDatasetsAddress.md) |  | [optional] 
 **status** | [**CodatDataContractsDatasetsCustomerStatus**](CodatDataContractsDatasetsCustomerStatus.md) |  | 
-**modified_date** | **datetime** |  | [optional] 
+**name** | **str, none_type** |  | [optional] 
+**email** | **str, none_type** |  | [optional] 
+**phone** | [**[CodatDataContractsDatasetsPhone], none_type**](CodatDataContractsDatasetsPhone.md) |  | [optional] 
+**address** | [**CodatDataContractsDatasetsAddress**](CodatDataContractsDatasetsAddress.md) |  | [optional] 
+**modified_date** | **datetime, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

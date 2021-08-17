@@ -1,6 +1,6 @@
 # codat_python_sdk.RulesApi
 
-All URIs are relative to */*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,41 +14,58 @@ Method | HTTP request | Description
 [**rules_rule_id_get**](RulesApi.md#rules_rule_id_get) | **GET** /rules/{ruleId} | 
 [**rules_rule_id_put**](RulesApi.md#rules_rule_id_put) | **PUT** /rules/{ruleId} | 
 
+
 # **rules_alerts_alert_id_get**
 > CodatRulesContractsResponsesAlert rules_alerts_alert_id_get(alert_id)
 
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_rules_contracts_responses_alert import CodatRulesContractsResponsesAlert
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-alert_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    alert_id = "alertId_example" # str | 
 
-try:
-    api_response = api_instance.rules_alerts_alert_id_get(alert_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_alerts_alert_id_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.rules_alerts_alert_id_get(alert_id)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_alerts_alert_id_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **alert_id** | [**str**](.md)|  | 
+ **alert_id** | **str**|  |
 
 ### Return type
 
@@ -62,6 +79,12 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -71,35 +94,51 @@ Name | Type | Description  | Notes
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_rules_contracts_responses_alert import CodatRulesContractsResponsesAlert
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-alert_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    alert_id = "alertId_example" # str | 
 
-try:
-    api_response = api_instance.rules_alerts_alert_id_resolve_post(alert_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_alerts_alert_id_resolve_post: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.rules_alerts_alert_id_resolve_post(alert_id)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_alerts_alert_id_resolve_post: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **alert_id** | [**str**](.md)|  | 
+ **alert_id** | **str**|  |
 
 ### Return type
 
@@ -114,51 +153,80 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_alerts_get**
-> CodatRulesContractsResponsesAlertPagedResponseModel rules_alerts_get(page, company_id=company_id, page_size=page_size, query=query, order_by=order_by)
+> CodatRulesContractsResponsesAlertPagedResponseModel rules_alerts_get()
 
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_rules_contracts_responses_alert_paged_response_model import CodatRulesContractsResponsesAlertPagedResponseModel
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-page = 1 # int |  (default to 1)
-company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str |  (optional)
-page_size = 100 # int |  (optional) (default to 100)
-query = 'query_example' # str |  (optional)
-order_by = 'order_by_example' # str |  (optional)
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    company_id = "companyId_example" # str |  (optional)
+    page_size = 100 # int |  (optional) if omitted the server will use the default value of 100
+    query = "query_example" # str |  (optional)
+    order_by = "orderBy_example" # str |  (optional)
 
-try:
-    api_response = api_instance.rules_alerts_get(page, company_id=company_id, page_size=page_size, query=query, order_by=order_by)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_alerts_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.rules_alerts_get()
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_alerts_get: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.rules_alerts_get(company_id=company_id, page_size=page_size, query=query, order_by=order_by)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_alerts_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**|  | [default to 1]
- **company_id** | [**str**](.md)|  | [optional] 
- **page_size** | **int**|  | [optional] [default to 100]
- **query** | **str**|  | [optional] 
- **order_by** | **str**|  | [optional] 
+ **page** | **int**|  | defaults to 1
+ **company_id** | **str**|  | [optional]
+ **page_size** | **int**|  | [optional] if omitted the server will use the default value of 100
+ **query** | **str**|  | [optional]
+ **order_by** | **str**|  | [optional]
 
 ### Return type
 
@@ -173,52 +241,82 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_get**
-> CodatPublicApiModelsRulesRulePagedResponseModel rules_get(page, company_id=company_id, page_size=page_size, query=query, order_by=order_by)
+> CodatPublicApiModelsRulesRulePagedResponseModel rules_get()
 
 Fetch a list of rules a company is subscribed to
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_public_api_models_rules_rule_paged_response_model import CodatPublicApiModelsRulesRulePagedResponseModel
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-page = 1 # int |  (default to 1)
-company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str |  (optional)
-page_size = 100 # int |  (optional) (default to 100)
-query = 'query_example' # str |  (optional)
-order_by = 'order_by_example' # str |  (optional)
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    company_id = "companyId_example" # str |  (optional)
+    page_size = 100 # int |  (optional) if omitted the server will use the default value of 100
+    query = "query_example" # str |  (optional)
+    order_by = "orderBy_example" # str |  (optional)
 
-try:
-    # Fetch a list of rules a company is subscribed to
-    api_response = api_instance.rules_get(page, company_id=company_id, page_size=page_size, query=query, order_by=order_by)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        # Fetch a list of rules a company is subscribed to
+        api_response = api_instance.rules_get()
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_get: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Fetch a list of rules a company is subscribed to
+        api_response = api_instance.rules_get(company_id=company_id, page_size=page_size, query=query, order_by=order_by)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**|  | [default to 1]
- **company_id** | [**str**](.md)|  | [optional] 
- **page_size** | **int**|  | [optional] [default to 100]
- **query** | **str**|  | [optional] 
- **order_by** | **str**|  | [optional] 
+ **page** | **int**|  | defaults to 1
+ **company_id** | **str**|  | [optional]
+ **page_size** | **int**|  | [optional] if omitted the server will use the default value of 100
+ **query** | **str**|  | [optional]
+ **order_by** | **str**|  | [optional]
 
 ### Return type
 
@@ -233,44 +331,77 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_post**
-> CodatPublicApiModelsRulesRule rules_post(body=body)
+> CodatPublicApiModelsRulesRule rules_post()
 
 Subscribe to a rule
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_public_api_models_rules_rule import CodatPublicApiModelsRulesRule
+from codat_python_sdk.model.codat_public_api_models_rules_add_rule_model import CodatPublicApiModelsRulesAddRuleModel
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-body = codat_python_sdk.CodatPublicApiModelsRulesAddRuleModel() # CodatPublicApiModelsRulesAddRuleModel |  (optional)
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    codat_public_api_models_rules_add_rule_model = CodatPublicApiModelsRulesAddRuleModel(
+        company_id="company_id_example",
+        type="type_example",
+        notifiers=CodatPublicApiModelsRulesNotifiers(
+            emails=[
+                "emails_example",
+            ],
+            webhook="webhook_example",
+        ),
+    ) # CodatPublicApiModelsRulesAddRuleModel |  (optional)
 
-try:
-    # Subscribe to a rule
-    api_response = api_instance.rules_post(body=body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_post: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Subscribe to a rule
+        api_response = api_instance.rules_post(codat_public_api_models_rules_add_rule_model=codat_public_api_models_rules_add_rule_model)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_post: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CodatPublicApiModelsRulesAddRuleModel**](CodatPublicApiModelsRulesAddRuleModel.md)|  | [optional] 
+ **codat_public_api_models_rules_add_rule_model** | [**CodatPublicApiModelsRulesAddRuleModel**](CodatPublicApiModelsRulesAddRuleModel.md)|  | [optional]
 
 ### Return type
 
@@ -285,51 +416,80 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_rule_id_alerts_get**
-> CodatRulesContractsResponsesAlertPagedResponseModel rules_rule_id_alerts_get(rule_id, page, page_size=page_size, query=query, order_by=order_by)
+> CodatRulesContractsResponsesAlertPagedResponseModel rules_rule_id_alerts_get(rule_id, )
 
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_rules_contracts_responses_alert_paged_response_model import CodatRulesContractsResponsesAlertPagedResponseModel
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-rule_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-page = 1 # int |  (default to 1)
-page_size = 100 # int |  (optional) (default to 100)
-query = 'query_example' # str |  (optional)
-order_by = 'order_by_example' # str |  (optional)
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    rule_id = "ruleId_example" # str | 
+    page_size = 100 # int |  (optional) if omitted the server will use the default value of 100
+    query = "query_example" # str |  (optional)
+    order_by = "orderBy_example" # str |  (optional)
 
-try:
-    api_response = api_instance.rules_rule_id_alerts_get(rule_id, page, page_size=page_size, query=query, order_by=order_by)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_rule_id_alerts_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.rules_rule_id_alerts_get(rule_id, )
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_rule_id_alerts_get: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.rules_rule_id_alerts_get(rule_id, page_size=page_size, query=query, order_by=order_by)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_rule_id_alerts_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rule_id** | [**str**](.md)|  | 
- **page** | **int**|  | [default to 1]
- **page_size** | **int**|  | [optional] [default to 100]
- **query** | **str**|  | [optional] 
- **order_by** | **str**|  | [optional] 
+ **rule_id** | **str**|  |
+ **page** | **int**|  | defaults to 1
+ **page_size** | **int**|  | [optional] if omitted the server will use the default value of 100
+ **query** | **str**|  | [optional]
+ **order_by** | **str**|  | [optional]
 
 ### Return type
 
@@ -344,6 +504,12 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_rule_id_delete**
@@ -352,34 +518,49 @@ Name | Type | Description  | Notes
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-rule_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    rule_id = "ruleId_example" # str | 
 
-try:
-    api_instance.rules_rule_id_delete(rule_id)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_rule_id_delete: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_instance.rules_rule_id_delete(rule_id)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_rule_id_delete: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rule_id** | [**str**](.md)|  | 
+ **rule_id** | **str**|  |
 
 ### Return type
 
@@ -394,6 +575,12 @@ void (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_rule_id_get**
@@ -402,35 +589,51 @@ void (empty response body)
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_public_api_models_rules_rule import CodatPublicApiModelsRulesRule
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-rule_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    rule_id = "ruleId_example" # str | 
 
-try:
-    api_response = api_instance.rules_rule_id_get(rule_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_rule_id_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.rules_rule_id_get(rule_id)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_rule_id_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rule_id** | [**str**](.md)|  | 
+ **rule_id** | **str**|  |
 
 ### Return type
 
@@ -445,45 +648,85 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **rules_rule_id_put**
-> CodatPublicApiModelsRulesRule rules_rule_id_put(rule_id, body=body)
+> CodatPublicApiModelsRulesRule rules_rule_id_put(rule_id)
 
 
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import rules_api
+from codat_python_sdk.model.codat_public_api_models_rules_rule import CodatPublicApiModelsRulesRule
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.RulesApi(codat_python_sdk.ApiClient(configuration))
-rule_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-body = codat_python_sdk.CodatPublicApiModelsRulesRule() # CodatPublicApiModelsRulesRule |  (optional)
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = rules_api.RulesApi(api_client)
+    rule_id = "ruleId_example" # str | 
+    codat_public_api_models_rules_rule = CodatPublicApiModelsRulesRule(
+        id="id_example",
+        type="type_example",
+        company_id="company_id_example",
+        notifiers=CodatPublicApiModelsRulesNotifiers(
+            emails=[
+                "emails_example",
+            ],
+            webhook="webhook_example",
+        ),
+    ) # CodatPublicApiModelsRulesRule |  (optional)
 
-try:
-    api_response = api_instance.rules_rule_id_put(rule_id, body=body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RulesApi->rules_rule_id_put: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.rules_rule_id_put(rule_id)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_rule_id_put: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.rules_rule_id_put(rule_id, codat_public_api_models_rules_rule=codat_public_api_models_rules_rule)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling RulesApi->rules_rule_id_put: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rule_id** | [**str**](.md)|  | 
- **body** | [**CodatPublicApiModelsRulesRule**](CodatPublicApiModelsRulesRule.md)|  | [optional] 
+ **rule_id** | **str**|  |
+ **codat_public_api_models_rules_rule** | [**CodatPublicApiModelsRulesRule**](CodatPublicApiModelsRulesRule.md)|  | [optional]
 
 ### Return type
 
@@ -497,6 +740,12 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

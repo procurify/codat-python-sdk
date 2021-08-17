@@ -1,25 +1,27 @@
 # CodatDataContractsDatasetsCommerceOrder
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**order_number** | **str** |  | [optional] 
-**country** | **str** |  | [optional] 
-**currency** | **str** |  | [optional] 
+**id** | **str, none_type** |  | [optional] 
+**order_number** | **str, none_type** |  | [optional] 
+**country** | **str, none_type** |  | [optional] 
+**currency** | **str, none_type** |  | [optional] 
 **created_date** | **datetime** |  | [optional] 
-**closed_date** | **datetime** |  | [optional] 
+**closed_date** | **datetime, none_type** |  | [optional] 
 **total_amount** | **float** |  | [optional] 
 **total_refund** | **float** |  | [optional] 
 **total_tax_amount** | **float** |  | [optional] 
 **total_discount** | **float** |  | [optional] 
 **total_gratuity** | **float** |  | [optional] 
-**order_line_items** | [**list[CodatDataContractsDatasetsCommerceOrderLineItem]**](CodatDataContractsDatasetsCommerceOrderLineItem.md) |  | [optional] 
-**payments** | [**list[CodatDataContractsDatasetsCommercePaymentRef]**](CodatDataContractsDatasetsCommercePaymentRef.md) |  | [optional] 
-**service_charges** | [**list[CodatDataContractsDatasetsCommerceServiceCharge]**](CodatDataContractsDatasetsCommerceServiceCharge.md) |  | [optional] 
+**order_line_items** | [**[CodatDataContractsDatasetsCommerceOrderLineItem], none_type**](CodatDataContractsDatasetsCommerceOrderLineItem.md) |  | [optional] 
+**payments** | [**[CodatDataContractsDatasetsCommercePaymentRef], none_type**](CodatDataContractsDatasetsCommercePaymentRef.md) |  | [optional] 
+**service_charges** | [**[CodatDataContractsDatasetsCommerceServiceCharge], none_type**](CodatDataContractsDatasetsCommerceServiceCharge.md) |  | [optional] 
 **customer_ref** | [**CodatDataContractsDatasetsCommerceCustomerRef**](CodatDataContractsDatasetsCommerceCustomerRef.md) |  | [optional] 
-**modified_date** | **datetime** |  | [optional] 
-**source_modified_date** | **datetime** |  | [optional] 
+**modified_date** | **datetime, none_type** |  | [optional] 
+**source_modified_date** | **datetime, none_type** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

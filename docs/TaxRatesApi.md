@@ -1,56 +1,81 @@
 # codat_python_sdk.TaxRatesApi
 
-All URIs are relative to */*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**companies_company_id_data_tax_rates_get**](TaxRatesApi.md#companies_company_id_data_tax_rates_get) | **GET** /companies/{companyId}/data/taxRates | Gets the latest tax rates for a given company.
 [**companies_company_id_data_tax_rates_tax_rate_id_get**](TaxRatesApi.md#companies_company_id_data_tax_rates_tax_rate_id_get) | **GET** /companies/{companyId}/data/taxRates/{taxRateId} | Gets the specified tax rate for a given company.
 
+
 # **companies_company_id_data_tax_rates_get**
-> CodatDataContractsDatasetsTaxRatePagedResponseModel companies_company_id_data_tax_rates_get(company_id, page, page_size=page_size, query=query, order_by=order_by)
+> CodatDataContractsDatasetsTaxRatePagedResponseModel companies_company_id_data_tax_rates_get(company_id, )
 
 Gets the latest tax rates for a given company.
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import tax_rates_api
+from codat_python_sdk.model.codat_data_contracts_datasets_tax_rate_paged_response_model import CodatDataContractsDatasetsTaxRatePagedResponseModel
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.TaxRatesApi(codat_python_sdk.ApiClient(configuration))
-company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-page = 1 # int |  (default to 1)
-page_size = 100 # int |  (optional) (default to 100)
-query = 'query_example' # str |  (optional)
-order_by = 'order_by_example' # str |  (optional)
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tax_rates_api.TaxRatesApi(api_client)
+    company_id = "companyId_example" # str | 
+    page_size = 100 # int |  (optional) if omitted the server will use the default value of 100
+    query = "query_example" # str |  (optional)
+    order_by = "orderBy_example" # str |  (optional)
 
-try:
-    # Gets the latest tax rates for a given company.
-    api_response = api_instance.companies_company_id_data_tax_rates_get(company_id, page, page_size=page_size, query=query, order_by=order_by)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TaxRatesApi->companies_company_id_data_tax_rates_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        # Gets the latest tax rates for a given company.
+        api_response = api_instance.companies_company_id_data_tax_rates_get(company_id, )
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling TaxRatesApi->companies_company_id_data_tax_rates_get: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Gets the latest tax rates for a given company.
+        api_response = api_instance.companies_company_id_data_tax_rates_get(company_id, page_size=page_size, query=query, order_by=order_by)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling TaxRatesApi->companies_company_id_data_tax_rates_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_id** | [**str**](.md)|  | 
- **page** | **int**|  | [default to 1]
- **page_size** | **int**|  | [optional] [default to 100]
- **query** | **str**|  | [optional] 
- **order_by** | **str**|  | [optional] 
+ **company_id** | **str**|  |
+ **page** | **int**|  | defaults to 1
+ **page_size** | **int**|  | [optional] if omitted the server will use the default value of 100
+ **query** | **str**|  | [optional]
+ **order_by** | **str**|  | [optional]
 
 ### Return type
 
@@ -65,6 +90,12 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **companies_company_id_data_tax_rates_tax_rate_id_get**
@@ -73,38 +104,54 @@ Name | Type | Description  | Notes
 Gets the specified tax rate for a given company.
 
 ### Example
+
+* Api Key Authentication (API Key Auth):
 ```python
-from __future__ import print_function
 import time
 import codat_python_sdk
-from codat_python_sdk.rest import ApiException
+from codat_python_sdk.api import tax_rates_api
+from codat_python_sdk.model.codat_data_contracts_datasets_tax_rate import CodatDataContractsDatasetsTaxRate
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
 
 # Configure API key authorization: API Key Auth
-configuration = codat_python_sdk.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
+# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
-# create an instance of the API class
-api_instance = codat_python_sdk.TaxRatesApi(codat_python_sdk.ApiClient(configuration))
-company_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # str | 
-tax_rate_id = 'tax_rate_id_example' # str | 
+# Enter a context with an instance of the API client
+with codat_python_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tax_rates_api.TaxRatesApi(api_client)
+    company_id = "companyId_example" # str | 
+    tax_rate_id = "taxRateId_example" # str | 
 
-try:
-    # Gets the specified tax rate for a given company.
-    api_response = api_instance.companies_company_id_data_tax_rates_tax_rate_id_get(company_id, tax_rate_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TaxRatesApi->companies_company_id_data_tax_rates_tax_rate_id_get: %s\n" % e)
+    # example passing only required values which don't have defaults set
+    try:
+        # Gets the specified tax rate for a given company.
+        api_response = api_instance.companies_company_id_data_tax_rates_tax_rate_id_get(company_id, tax_rate_id)
+        pprint(api_response)
+    except codat_python_sdk.ApiException as e:
+        print("Exception when calling TaxRatesApi->companies_company_id_data_tax_rates_tax_rate_id_get: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_id** | [**str**](.md)|  | 
- **tax_rate_id** | **str**|  | 
+ **company_id** | **str**|  |
+ **tax_rate_id** | **str**|  |
 
 ### Return type
 
@@ -118,6 +165,12 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Success |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
