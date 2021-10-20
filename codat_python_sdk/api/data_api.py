@@ -107,7 +107,8 @@ class DataApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/all',
                 'operation_id': 'companies_company_id_data_all_post',
@@ -227,7 +228,8 @@ class DataApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataDataSet,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/history/{datasetId}',
                 'operation_id': 'companies_company_id_data_history_dataset_id_get',
@@ -358,7 +360,8 @@ class DataApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataDataSetPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/history',
                 'operation_id': 'companies_company_id_data_history_get',
@@ -503,7 +506,8 @@ class DataApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataDataSet,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/queue/{dataType}',
                 'operation_id': 'companies_company_id_data_queue_data_type_post',

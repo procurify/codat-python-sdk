@@ -101,7 +101,8 @@ class ProfileApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyProfileModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/profile/apiKey',
                 'operation_id': 'profile_api_key_put',
@@ -207,7 +208,8 @@ class ProfileApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyProfileModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/profile',
                 'operation_id': 'profile_get',
@@ -315,7 +317,8 @@ class ProfileApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyProfileModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/profile',
                 'operation_id': 'profile_put',
@@ -427,7 +430,8 @@ class ProfileApi(object):
             settings={
                 'response_type': (CodatClientsApiClientContractClientSyncSettings,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/profile/syncSettings',
                 'operation_id': 'profile_sync_settings_get',
@@ -534,7 +538,8 @@ class ProfileApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/profile/syncSettings',
                 'operation_id': 'profile_sync_settings_post',

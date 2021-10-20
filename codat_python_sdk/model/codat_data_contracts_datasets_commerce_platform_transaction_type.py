@@ -57,19 +57,9 @@ class CodatDataContractsDatasetsCommercePlatformTransactionType(ModelSimple):
             'REFUND': "Refund",
             'PAYOUT': "Payout",
             'FAILEDPAYOUT': "FailedPayout",
-            'CASHBACK': "Cashback",
             'TRANSFER': "Transfer",
-            'REFERRAL': "Referral",
-            'FROZENFUNDS': "FrozenFunds",
             'PAYMENTFEE': "PaymentFee",
             'PAYMENTFEEREFUND': "PaymentFeeRefund",
-            'ADVANCE': "Advance",
-            'ADVANCEFEE': "AdvanceFee",
-            'ADVANCEDOWNPAYMENT': "AdvanceDownpayment",
-            'ADVANCEFEEDOWNPAYMENT': "AdvanceFeeDownpayment",
-            'INVOICEPAYMENT': "InvoicePayment",
-            'INVOICEPAYMENTFEE': "InvoicePaymentFee",
-            'ADJUSTMENT': "Adjustment",
         },
     }
 
@@ -127,10 +117,10 @@ class CodatDataContractsDatasetsCommercePlatformTransactionType(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Cashback", "Transfer", "Referral", "FrozenFunds", "PaymentFee", "PaymentFeeRefund", "Advance", "AdvanceFee", "AdvanceDownpayment", "AdvanceFeeDownpayment", "InvoicePayment", "InvoicePaymentFee", "Adjustment", ]  # noqa: E501
+            args[0] (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Transfer", "PaymentFee", "PaymentFeeRefund", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Cashback", "Transfer", "Referral", "FrozenFunds", "PaymentFee", "PaymentFeeRefund", "Advance", "AdvanceFee", "AdvanceDownpayment", "AdvanceFeeDownpayment", "InvoicePayment", "InvoicePaymentFee", "Adjustment", ]  # noqa: E501
+            value (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Transfer", "PaymentFee", "PaymentFeeRefund", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
@@ -217,10 +207,10 @@ class CodatDataContractsDatasetsCommercePlatformTransactionType(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Cashback", "Transfer", "Referral", "FrozenFunds", "PaymentFee", "PaymentFeeRefund", "Advance", "AdvanceFee", "AdvanceDownpayment", "AdvanceFeeDownpayment", "InvoicePayment", "InvoicePaymentFee", "Adjustment", ]  # noqa: E501
+            args[0] (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Transfer", "PaymentFee", "PaymentFeeRefund", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Cashback", "Transfer", "Referral", "FrozenFunds", "PaymentFee", "PaymentFeeRefund", "Advance", "AdvanceFee", "AdvanceDownpayment", "AdvanceFeeDownpayment", "InvoicePayment", "InvoicePaymentFee", "Adjustment", ]  # noqa: E501
+            value (str):, must be one of ["Unknown", "Payment", "Refund", "Payout", "FailedPayout", "Transfer", "PaymentFee", "PaymentFeeRefund", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.

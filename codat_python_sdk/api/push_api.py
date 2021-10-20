@@ -115,7 +115,8 @@ class PushApi(object):
             settings={
                 'response_type': (CodatDataContractsPushPushOption,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/options/{dataType}',
                 'operation_id': 'companies_company_id_connections_connection_id_options_data_type_get',
@@ -252,7 +253,8 @@ class PushApi(object):
             settings={
                 'response_type': (SystemObjectPushOperationPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/push',
                 'operation_id': 'companies_company_id_push_get',
@@ -395,7 +397,8 @@ class PushApi(object):
             settings={
                 'response_type': (SystemObjectPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/push/{pushOperationKey}',
                 'operation_id': 'companies_company_id_push_push_operation_key_get',

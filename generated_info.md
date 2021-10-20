@@ -76,6 +76,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -135,6 +141,8 @@ Class | Method | HTTP request | Description
 *CommerceDisputesApi* | [**companies_company_id_connections_connection_id_data_commerce_disputes_dispute_id_get**](docs/CommerceDisputesApi.md#companies_company_id_connections_connection_id_data_commerce_disputes_dispute_id_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-disputes/{disputeId} | Gets the specified commerce dispute for a given company
 *CommerceDisputesApi* | [**companies_company_id_connections_connection_id_data_commerce_disputes_get**](docs/CommerceDisputesApi.md#companies_company_id_connections_connection_id_data_commerce_disputes_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-disputes | Gets the latest commerce disputes for a company, with pagination
 *CommerceInfoApi* | [**companies_company_id_connections_connection_id_data_commerce_info_get**](docs/CommerceInfoApi.md#companies_company_id_connections_connection_id_data_commerce_info_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-info | Gets the latest basic info for a commerce company.
+*CommerceLocationsApi* | [**companies_company_id_connections_connection_id_data_commerce_locations_get**](docs/CommerceLocationsApi.md#companies_company_id_connections_connection_id_data_commerce_locations_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-locations | Gets the latest commerce locations for a company, with pagination
+*CommerceLocationsApi* | [**companies_company_id_connections_connection_id_data_commerce_locations_location_id_get**](docs/CommerceLocationsApi.md#companies_company_id_connections_connection_id_data_commerce_locations_location_id_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-locations/{locationId} | Gets the specified commerce location for a given company
 *CommerceOrdersApi* | [**companies_company_id_connections_connection_id_data_commerce_orders_get**](docs/CommerceOrdersApi.md#companies_company_id_connections_connection_id_data_commerce_orders_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-orders | Gets the latest commerce orders for a company, with pagination
 *CommerceOrdersApi* | [**companies_company_id_connections_connection_id_data_commerce_orders_order_id_get**](docs/CommerceOrdersApi.md#companies_company_id_connections_connection_id_data_commerce_orders_order_id_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-orders/{orderId} | Gets the specified commerce order for a given company
 *CommercePaymentsApi* | [**companies_company_id_connections_connection_id_data_commerce_payments_get**](docs/CommercePaymentsApi.md#companies_company_id_connections_connection_id_data_commerce_payments_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/commerce-payments | Gets the latest commerce payments for a company, with pagination
@@ -183,7 +191,7 @@ Class | Method | HTTP request | Description
 *DirectIncomesApi* | [**companies_company_id_connections_connection_id_data_direct_incomes_get**](docs/DirectIncomesApi.md#companies_company_id_connections_connection_id_data_direct_incomes_get) | **GET** /companies/{companyId}/connections/{connectionId}/data/directIncomes | Gets the direct incomes for a given company.
 *DirectIncomesApi* | [**companies_company_id_connections_connection_id_push_direct_incomes_post**](docs/DirectIncomesApi.md#companies_company_id_connections_connection_id_push_direct_incomes_post) | **POST** /companies/{companyId}/connections/{connectionId}/push/directIncomes | Posts a new direct income to the accounting package for a given company.
 *FinancialsApi* | [**companies_company_id_data_financials_balance_sheet_get**](docs/FinancialsApi.md#companies_company_id_data_financials_balance_sheet_get) | **GET** /companies/{companyId}/data/financials/balanceSheet | Gets the latest balance sheet for a company.
-*FinancialsApi* | [**companies_company_id_data_financials_cash_flow_statement_get**](docs/FinancialsApi.md#companies_company_id_data_financials_cash_flow_statement_get) | **GET** /companies/{companyId}/data/financials/cashFlowStatement | Gets the latest balance sheet for a company.
+*FinancialsApi* | [**companies_company_id_data_financials_cash_flow_statement_get**](docs/FinancialsApi.md#companies_company_id_data_financials_cash_flow_statement_get) | **GET** /companies/{companyId}/data/financials/cashFlowStatement | Gets the latest cash flow statement for a company.
 *FinancialsApi* | [**companies_company_id_data_financials_profit_and_loss_get**](docs/FinancialsApi.md#companies_company_id_data_financials_profit_and_loss_get) | **GET** /companies/{companyId}/data/financials/profitAndLoss | Gets the latest profit and loss for a company.
 *InfoApi* | [**companies_company_id_data_info_get**](docs/InfoApi.md#companies_company_id_data_info_get) | **GET** /companies/{companyId}/data/info | Gets the latest basic info for a company.
 *InfoApi* | [**companies_company_id_data_info_post**](docs/InfoApi.md#companies_company_id_data_info_post) | **POST** /companies/{companyId}/data/info | Initiates the process of synchronising basic info for a company
@@ -233,7 +241,6 @@ Class | Method | HTTP request | Description
 *ReportsApi* | [**companies_company_id_reports_aged_debtor_get**](docs/ReportsApi.md#companies_company_id_reports_aged_debtor_get) | **GET** /companies/{companyId}/reports/agedDebtor | Gets the aged debtor report for a company.
 *ReportsApi* | [**companies_company_id_reports_events_get**](docs/ReportsApi.md#companies_company_id_reports_events_get) | **GET** /companies/{companyId}/reports/events | 
 *RulesApi* | [**rules_alerts_alert_id_get**](docs/RulesApi.md#rules_alerts_alert_id_get) | **GET** /rules/alerts/{alertId} | 
-*RulesApi* | [**rules_alerts_alert_id_resolve_post**](docs/RulesApi.md#rules_alerts_alert_id_resolve_post) | **POST** /rules/alerts/{alertId}/resolve | 
 *RulesApi* | [**rules_alerts_get**](docs/RulesApi.md#rules_alerts_get) | **GET** /rules/alerts | 
 *RulesApi* | [**rules_get**](docs/RulesApi.md#rules_get) | **GET** /rules | Fetch a list of rules a company is subscribed to
 *RulesApi* | [**rules_post**](docs/RulesApi.md#rules_post) | **POST** /rules | Subscribe to a rule
@@ -322,12 +329,7 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsBankTransactions](docs/CodatDataContractsDatasetsBankTransactions.md)
  - [CodatDataContractsDatasetsBankTransactionsPushOperation](docs/CodatDataContractsDatasetsBankTransactionsPushOperation.md)
  - [CodatDataContractsDatasetsBill](docs/CodatDataContractsDatasetsBill.md)
- - [CodatDataContractsDatasetsBillCreditNote](docs/CodatDataContractsDatasetsBillCreditNote.md)
  - [CodatDataContractsDatasetsBillCreditNoteLineItem](docs/CodatDataContractsDatasetsBillCreditNoteLineItem.md)
- - [CodatDataContractsDatasetsBillCreditNotePagedResponseHrefModel](docs/CodatDataContractsDatasetsBillCreditNotePagedResponseHrefModel.md)
- - [CodatDataContractsDatasetsBillCreditNotePagedResponseLinksModel](docs/CodatDataContractsDatasetsBillCreditNotePagedResponseLinksModel.md)
- - [CodatDataContractsDatasetsBillCreditNotePagedResponseModel](docs/CodatDataContractsDatasetsBillCreditNotePagedResponseModel.md)
- - [CodatDataContractsDatasetsBillCreditNotePushOperation](docs/CodatDataContractsDatasetsBillCreditNotePushOperation.md)
  - [CodatDataContractsDatasetsBillItem](docs/CodatDataContractsDatasetsBillItem.md)
  - [CodatDataContractsDatasetsBillLineItem](docs/CodatDataContractsDatasetsBillLineItem.md)
  - [CodatDataContractsDatasetsBillPagedResponseHrefModel](docs/CodatDataContractsDatasetsBillPagedResponseHrefModel.md)
@@ -347,6 +349,7 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsCashFlowStatement](docs/CodatDataContractsDatasetsCashFlowStatement.md)
  - [CodatDataContractsDatasetsCashFlowStatementReportingBasis](docs/CodatDataContractsDatasetsCashFlowStatementReportingBasis.md)
  - [CodatDataContractsDatasetsCashFlowStatementReportingData](docs/CodatDataContractsDatasetsCashFlowStatementReportingData.md)
+ - [CodatDataContractsDatasetsCommerceAccountBalance](docs/CodatDataContractsDatasetsCommerceAccountBalance.md)
  - [CodatDataContractsDatasetsCommerceAddress](docs/CodatDataContractsDatasetsCommerceAddress.md)
  - [CodatDataContractsDatasetsCommerceAddressType](docs/CodatDataContractsDatasetsCommerceAddressType.md)
  - [CodatDataContractsDatasetsCommerceCompanyInfo](docs/CodatDataContractsDatasetsCommerceCompanyInfo.md)
@@ -361,6 +364,13 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsCommerceDisputePagedResponseLinksModel](docs/CodatDataContractsDatasetsCommerceDisputePagedResponseLinksModel.md)
  - [CodatDataContractsDatasetsCommerceDisputePagedResponseModel](docs/CodatDataContractsDatasetsCommerceDisputePagedResponseModel.md)
  - [CodatDataContractsDatasetsCommerceDisputeStatus](docs/CodatDataContractsDatasetsCommerceDisputeStatus.md)
+ - [CodatDataContractsDatasetsCommerceInventory](docs/CodatDataContractsDatasetsCommerceInventory.md)
+ - [CodatDataContractsDatasetsCommerceInventoryLocation](docs/CodatDataContractsDatasetsCommerceInventoryLocation.md)
+ - [CodatDataContractsDatasetsCommerceLocation](docs/CodatDataContractsDatasetsCommerceLocation.md)
+ - [CodatDataContractsDatasetsCommerceLocationPagedResponseHrefModel](docs/CodatDataContractsDatasetsCommerceLocationPagedResponseHrefModel.md)
+ - [CodatDataContractsDatasetsCommerceLocationPagedResponseLinksModel](docs/CodatDataContractsDatasetsCommerceLocationPagedResponseLinksModel.md)
+ - [CodatDataContractsDatasetsCommerceLocationPagedResponseModel](docs/CodatDataContractsDatasetsCommerceLocationPagedResponseModel.md)
+ - [CodatDataContractsDatasetsCommerceLocationRef](docs/CodatDataContractsDatasetsCommerceLocationRef.md)
  - [CodatDataContractsDatasetsCommerceOrder](docs/CodatDataContractsDatasetsCommerceOrder.md)
  - [CodatDataContractsDatasetsCommerceOrderLineItem](docs/CodatDataContractsDatasetsCommerceOrderLineItem.md)
  - [CodatDataContractsDatasetsCommerceOrderPagedResponseHrefModel](docs/CodatDataContractsDatasetsCommerceOrderPagedResponseHrefModel.md)
@@ -397,13 +407,7 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsCompanyDataset](docs/CodatDataContractsDatasetsCompanyDataset.md)
  - [CodatDataContractsDatasetsContact](docs/CodatDataContractsDatasetsContact.md)
  - [CodatDataContractsDatasetsContactRef](docs/CodatDataContractsDatasetsContactRef.md)
- - [CodatDataContractsDatasetsCreditNote](docs/CodatDataContractsDatasetsCreditNote.md)
  - [CodatDataContractsDatasetsCreditNoteLineItem](docs/CodatDataContractsDatasetsCreditNoteLineItem.md)
- - [CodatDataContractsDatasetsCreditNotePagedResponseHrefModel](docs/CodatDataContractsDatasetsCreditNotePagedResponseHrefModel.md)
- - [CodatDataContractsDatasetsCreditNotePagedResponseLinksModel](docs/CodatDataContractsDatasetsCreditNotePagedResponseLinksModel.md)
- - [CodatDataContractsDatasetsCreditNotePagedResponseModel](docs/CodatDataContractsDatasetsCreditNotePagedResponseModel.md)
- - [CodatDataContractsDatasetsCreditNotePaymentAllocation](docs/CodatDataContractsDatasetsCreditNotePaymentAllocation.md)
- - [CodatDataContractsDatasetsCreditNotePushOperation](docs/CodatDataContractsDatasetsCreditNotePushOperation.md)
  - [CodatDataContractsDatasetsCreditNoteStatus](docs/CodatDataContractsDatasetsCreditNoteStatus.md)
  - [CodatDataContractsDatasetsCustomer](docs/CodatDataContractsDatasetsCustomer.md)
  - [CodatDataContractsDatasetsCustomerPagedResponseHrefModel](docs/CodatDataContractsDatasetsCustomerPagedResponseHrefModel.md)
@@ -425,14 +429,8 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsDirectIncomePagedResponseModel](docs/CodatDataContractsDatasetsDirectIncomePagedResponseModel.md)
  - [CodatDataContractsDatasetsDirectIncomePushOperation](docs/CodatDataContractsDatasetsDirectIncomePushOperation.md)
  - [CodatDataContractsDatasetsFromAccount](docs/CodatDataContractsDatasetsFromAccount.md)
- - [CodatDataContractsDatasetsInvoice](docs/CodatDataContractsDatasetsInvoice.md)
  - [CodatDataContractsDatasetsInvoiceItem](docs/CodatDataContractsDatasetsInvoiceItem.md)
  - [CodatDataContractsDatasetsInvoiceLineItem](docs/CodatDataContractsDatasetsInvoiceLineItem.md)
- - [CodatDataContractsDatasetsInvoicePagedResponseHrefModel](docs/CodatDataContractsDatasetsInvoicePagedResponseHrefModel.md)
- - [CodatDataContractsDatasetsInvoicePagedResponseLinksModel](docs/CodatDataContractsDatasetsInvoicePagedResponseLinksModel.md)
- - [CodatDataContractsDatasetsInvoicePagedResponseModel](docs/CodatDataContractsDatasetsInvoicePagedResponseModel.md)
- - [CodatDataContractsDatasetsInvoicePaymentAllocation](docs/CodatDataContractsDatasetsInvoicePaymentAllocation.md)
- - [CodatDataContractsDatasetsInvoicePushOperation](docs/CodatDataContractsDatasetsInvoicePushOperation.md)
  - [CodatDataContractsDatasetsInvoiceStatus](docs/CodatDataContractsDatasetsInvoiceStatus.md)
  - [CodatDataContractsDatasetsItem](docs/CodatDataContractsDatasetsItem.md)
  - [CodatDataContractsDatasetsItemPagedResponseHrefModel](docs/CodatDataContractsDatasetsItemPagedResponseHrefModel.md)
@@ -448,11 +446,30 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsJournalEntryPagedResponseModel](docs/CodatDataContractsDatasetsJournalEntryPagedResponseModel.md)
  - [CodatDataContractsDatasetsJournalEntryPushOperation](docs/CodatDataContractsDatasetsJournalEntryPushOperation.md)
  - [CodatDataContractsDatasetsJournalLine](docs/CodatDataContractsDatasetsJournalLine.md)
+ - [CodatDataContractsDatasetsJournalRef](docs/CodatDataContractsDatasetsJournalRef.md)
+ - [CodatDataContractsDatasetsLegacyBillCreditNote](docs/CodatDataContractsDatasetsLegacyBillCreditNote.md)
+ - [CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseHrefModel](docs/CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseHrefModel.md)
+ - [CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseLinksModel](docs/CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseLinksModel.md)
+ - [CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel](docs/CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel.md)
+ - [CodatDataContractsDatasetsLegacyBillCreditNotePushOperation](docs/CodatDataContractsDatasetsLegacyBillCreditNotePushOperation.md)
+ - [CodatDataContractsDatasetsLegacyCreditNote](docs/CodatDataContractsDatasetsLegacyCreditNote.md)
+ - [CodatDataContractsDatasetsLegacyCreditNotePagedResponseHrefModel](docs/CodatDataContractsDatasetsLegacyCreditNotePagedResponseHrefModel.md)
+ - [CodatDataContractsDatasetsLegacyCreditNotePagedResponseLinksModel](docs/CodatDataContractsDatasetsLegacyCreditNotePagedResponseLinksModel.md)
+ - [CodatDataContractsDatasetsLegacyCreditNotePagedResponseModel](docs/CodatDataContractsDatasetsLegacyCreditNotePagedResponseModel.md)
+ - [CodatDataContractsDatasetsLegacyCreditNotePaymentAllocation](docs/CodatDataContractsDatasetsLegacyCreditNotePaymentAllocation.md)
+ - [CodatDataContractsDatasetsLegacyCreditNotePushOperation](docs/CodatDataContractsDatasetsLegacyCreditNotePushOperation.md)
+ - [CodatDataContractsDatasetsLegacyInvoice](docs/CodatDataContractsDatasetsLegacyInvoice.md)
+ - [CodatDataContractsDatasetsLegacyInvoicePagedResponseHrefModel](docs/CodatDataContractsDatasetsLegacyInvoicePagedResponseHrefModel.md)
+ - [CodatDataContractsDatasetsLegacyInvoicePagedResponseLinksModel](docs/CodatDataContractsDatasetsLegacyInvoicePagedResponseLinksModel.md)
+ - [CodatDataContractsDatasetsLegacyInvoicePagedResponseModel](docs/CodatDataContractsDatasetsLegacyInvoicePagedResponseModel.md)
+ - [CodatDataContractsDatasetsLegacyInvoicePaymentAllocation](docs/CodatDataContractsDatasetsLegacyInvoicePaymentAllocation.md)
+ - [CodatDataContractsDatasetsLegacyInvoicePushOperation](docs/CodatDataContractsDatasetsLegacyInvoicePushOperation.md)
  - [CodatDataContractsDatasetsPayment](docs/CodatDataContractsDatasetsPayment.md)
  - [CodatDataContractsDatasetsPaymentAllocationPayment](docs/CodatDataContractsDatasetsPaymentAllocationPayment.md)
  - [CodatDataContractsDatasetsPaymentLine](docs/CodatDataContractsDatasetsPaymentLine.md)
  - [CodatDataContractsDatasetsPaymentLineLink](docs/CodatDataContractsDatasetsPaymentLineLink.md)
  - [CodatDataContractsDatasetsPaymentLinkType](docs/CodatDataContractsDatasetsPaymentLinkType.md)
+ - [CodatDataContractsDatasetsPaymentMethodRef](docs/CodatDataContractsDatasetsPaymentMethodRef.md)
  - [CodatDataContractsDatasetsPaymentPagedResponseHrefModel](docs/CodatDataContractsDatasetsPaymentPagedResponseHrefModel.md)
  - [CodatDataContractsDatasetsPaymentPagedResponseLinksModel](docs/CodatDataContractsDatasetsPaymentPagedResponseLinksModel.md)
  - [CodatDataContractsDatasetsPaymentPagedResponseModel](docs/CodatDataContractsDatasetsPaymentPagedResponseModel.md)
@@ -461,7 +478,6 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsPhoneType](docs/CodatDataContractsDatasetsPhoneType.md)
  - [CodatDataContractsDatasetsProfitAndLossReport](docs/CodatDataContractsDatasetsProfitAndLossReport.md)
  - [CodatDataContractsDatasetsProfitAndLossReportingType](docs/CodatDataContractsDatasetsProfitAndLossReportingType.md)
- - [CodatDataContractsDatasetsProjectRef](docs/CodatDataContractsDatasetsProjectRef.md)
  - [CodatDataContractsDatasetsPurchaseOrder](docs/CodatDataContractsDatasetsPurchaseOrder.md)
  - [CodatDataContractsDatasetsPurchaseOrderLineItem](docs/CodatDataContractsDatasetsPurchaseOrderLineItem.md)
  - [CodatDataContractsDatasetsPurchaseOrderPagedResponseHrefModel](docs/CodatDataContractsDatasetsPurchaseOrderPagedResponseHrefModel.md)
@@ -595,6 +611,15 @@ Class | Method | HTTP request | Description
 - **Type**: API key
 - **API key parameter name**: Authorization
 - **Location**: HTTP header
+
+
+## Codat Login
+
+- **Type**: OAuth
+- **Flow**: implicit
+- **Authorization URL**: https://identity.codat.io/connect/authorize
+- **Scopes**: 
+ - **PublicApi**: PublicApi
 
 
 ## Author

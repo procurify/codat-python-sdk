@@ -30,9 +30,11 @@ from codat_python_sdk.exceptions import ApiAttributeError
 
 
 def lazy_import():
+    from codat_python_sdk.model.codat_data_contracts_datasets_commerce_account_balance import CodatDataContractsDatasetsCommerceAccountBalance
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_address import CodatDataContractsDatasetsCommerceAddress
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_phone import CodatDataContractsDatasetsCommercePhone
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_web_link import CodatDataContractsDatasetsCommerceWebLink
+    globals()['CodatDataContractsDatasetsCommerceAccountBalance'] = CodatDataContractsDatasetsCommerceAccountBalance
     globals()['CodatDataContractsDatasetsCommerceAddress'] = CodatDataContractsDatasetsCommerceAddress
     globals()['CodatDataContractsDatasetsCommercePhone'] = CodatDataContractsDatasetsCommercePhone
     globals()['CodatDataContractsDatasetsCommerceWebLink'] = CodatDataContractsDatasetsCommerceWebLink
@@ -91,6 +93,7 @@ class CodatDataContractsDatasetsCommerceCompanyInfo(ModelNormal):
             'web_links': ([CodatDataContractsDatasetsCommerceWebLink], none_type,),  # noqa: E501
             'registration_number': (str, none_type,),  # noqa: E501
             'base_currency': (str, none_type,),  # noqa: E501
+            'account_balances': ([CodatDataContractsDatasetsCommerceAccountBalance], none_type,),  # noqa: E501
             'source_urls': ({str: (str,)}, none_type,),  # noqa: E501
             'created_date': (datetime,),  # noqa: E501
             'modified_date': (datetime, none_type,),  # noqa: E501
@@ -110,6 +113,7 @@ class CodatDataContractsDatasetsCommerceCompanyInfo(ModelNormal):
         'web_links': 'webLinks',  # noqa: E501
         'registration_number': 'registrationNumber',  # noqa: E501
         'base_currency': 'baseCurrency',  # noqa: E501
+        'account_balances': 'accountBalances',  # noqa: E501
         'source_urls': 'sourceUrls',  # noqa: E501
         'created_date': 'createdDate',  # noqa: E501
         'modified_date': 'modifiedDate',  # noqa: E501
@@ -164,6 +168,7 @@ class CodatDataContractsDatasetsCommerceCompanyInfo(ModelNormal):
             web_links ([CodatDataContractsDatasetsCommerceWebLink], none_type): [optional]  # noqa: E501
             registration_number (str, none_type): [optional]  # noqa: E501
             base_currency (str, none_type): [optional]  # noqa: E501
+            account_balances ([CodatDataContractsDatasetsCommerceAccountBalance], none_type): [optional]  # noqa: E501
             source_urls ({str: (str,)}, none_type): [optional]  # noqa: E501
             created_date (datetime): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
@@ -256,6 +261,7 @@ class CodatDataContractsDatasetsCommerceCompanyInfo(ModelNormal):
             web_links ([CodatDataContractsDatasetsCommerceWebLink], none_type): [optional]  # noqa: E501
             registration_number (str, none_type): [optional]  # noqa: E501
             base_currency (str, none_type): [optional]  # noqa: E501
+            account_balances ([CodatDataContractsDatasetsCommerceAccountBalance], none_type): [optional]  # noqa: E501
             source_urls ({str: (str,)}, none_type): [optional]  # noqa: E501
             created_date (datetime): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501

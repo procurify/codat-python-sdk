@@ -104,7 +104,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (CodatClientsApiClientContractBankSettingsDataset,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/bankSettings',
                 'operation_id': 'integrations_bank_settings_get',
@@ -211,7 +212,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (CodatClientsApiClientContractBankSettingsDataset,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/bankSettings',
                 'operation_id': 'integrations_bank_settings_put',
@@ -328,7 +330,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (dict,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/credentials/{platformKey}',
                 'operation_id': 'integrations_credentials_platform_key_delete',
@@ -447,7 +450,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (dict,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/credentials/{platformKey}',
                 'operation_id': 'integrations_credentials_platform_key_get',
@@ -566,7 +570,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (dict,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/credentials/{platformKey}',
                 'operation_id': 'integrations_credentials_platform_key_put',
@@ -693,7 +698,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModelPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations',
                 'operation_id': 'integrations_get',
@@ -826,7 +832,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsClientsIntegrationBrandingModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/{platformKey}/branding',
                 'operation_id': 'integrations_platform_key_branding_get',
@@ -945,7 +952,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/{platformKey}/enabled',
                 'operation_id': 'integrations_platform_key_enabled_put',
@@ -1069,7 +1077,8 @@ class IntegrationsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsPlatformCredentialsPlatformSourceModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/integrations/{platformKey}',
                 'operation_id': 'integrations_platform_key_get',

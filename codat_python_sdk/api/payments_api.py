@@ -113,7 +113,8 @@ class PaymentsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPaymentPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/payments',
                 'operation_id': 'companies_company_id_connections_connection_id_push_payments_post',
@@ -255,7 +256,8 @@ class PaymentsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPaymentPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/payments',
                 'operation_id': 'companies_company_id_data_payments_get',
@@ -398,7 +400,8 @@ class PaymentsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPayment,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/payments/{paymentId}',
                 'operation_id': 'companies_company_id_data_payments_payment_id_get',

@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **order_line_items** | [**[CodatDataContractsDatasetsCommerceOrderLineItem], none_type**](CodatDataContractsDatasetsCommerceOrderLineItem.md) |  | [optional] 
 **payments** | [**[CodatDataContractsDatasetsCommercePaymentRef], none_type**](CodatDataContractsDatasetsCommercePaymentRef.md) |  | [optional] 
 **service_charges** | [**[CodatDataContractsDatasetsCommerceServiceCharge], none_type**](CodatDataContractsDatasetsCommerceServiceCharge.md) |  | [optional] 
+**location_ref** | [**CodatDataContractsDatasetsCommerceLocationRef**](CodatDataContractsDatasetsCommerceLocationRef.md) |  | [optional] 
 **customer_ref** | [**CodatDataContractsDatasetsCommerceCustomerRef**](CodatDataContractsDatasetsCommerceCustomerRef.md) |  | [optional] 
 **modified_date** | **datetime, none_type** |  | [optional] 
 **source_modified_date** | **datetime, none_type** |  | [optional] 

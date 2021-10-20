@@ -117,7 +117,8 @@ class CommerceTransactionsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsCommerceTransactionPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/commerce-transactions',
                 'operation_id': 'companies_company_id_connections_connection_id_data_commerce_transactions_get',
@@ -270,7 +271,8 @@ class CommerceTransactionsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsCommerceTransaction,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/commerce-transactions/{transactionId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_commerce_transactions_transaction_id_get',

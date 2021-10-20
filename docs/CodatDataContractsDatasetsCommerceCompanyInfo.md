@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **web_links** | [**[CodatDataContractsDatasetsCommerceWebLink], none_type**](CodatDataContractsDatasetsCommerceWebLink.md) |  | [optional] 
 **registration_number** | **str, none_type** |  | [optional] 
 **base_currency** | **str, none_type** |  | [optional] 
+**account_balances** | [**[CodatDataContractsDatasetsCommerceAccountBalance], none_type**](CodatDataContractsDatasetsCommerceAccountBalance.md) |  | [optional] 
 **source_urls** | **{str: (str,)}, none_type** |  | [optional] 
 **created_date** | **datetime** |  | [optional] 
 **modified_date** | **datetime, none_type** |  | [optional] 

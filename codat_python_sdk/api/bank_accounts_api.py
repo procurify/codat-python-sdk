@@ -128,7 +128,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankTransactionPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/bankAccounts/{accountId}/bankTransactions',
                 'operation_id': 'companies_company_id_connections_connection_id_data_bank_accounts_account_id_bank_transactions_get',
@@ -287,7 +288,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankAccount,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/bankAccounts/{accountId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_bank_accounts_account_id_get',
@@ -428,7 +430,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankAccountPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/bankAccounts',
                 'operation_id': 'companies_company_id_connections_connection_id_data_bank_accounts_get',
@@ -581,7 +584,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsPushPushOption,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/options/bankAccounts/{accountId}/bankTransactions',
                 'operation_id': 'companies_company_id_connections_connection_id_options_bank_accounts_account_id_bank_transactions_get',
@@ -722,7 +726,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankTransactionsPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/bankAccounts/{accountId}/bankTransactions',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bank_accounts_account_id_bank_transactions_post',
@@ -875,7 +880,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankStatementAccountPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/bankAccounts',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bank_accounts_post',
@@ -1020,7 +1026,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankStatementAccount,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/bankAccounts/{accountId}',
                 'operation_id': 'companies_company_id_data_bank_accounts_account_id_get',
@@ -1160,7 +1167,8 @@ class BankAccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankStatementLinePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/bankAccounts/{accountId}/transactions',
                 'operation_id': 'companies_company_id_data_bank_accounts_account_id_transactions_get',

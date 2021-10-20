@@ -114,7 +114,8 @@ class CommerceDisputesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsCommerceDispute,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/commerce-disputes/{disputeId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_commerce_disputes_dispute_id_get',
@@ -255,7 +256,8 @@ class CommerceDisputesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsCommerceDisputePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/commerce-disputes',
                 'operation_id': 'companies_company_id_connections_connection_id_data_commerce_disputes_get',

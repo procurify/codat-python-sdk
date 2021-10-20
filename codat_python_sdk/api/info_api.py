@@ -106,7 +106,8 @@ class InfoApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsCompanyDataset,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/info',
                 'operation_id': 'companies_company_id_data_info_get',
@@ -224,7 +225,8 @@ class InfoApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataDataSet,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/info',
                 'operation_id': 'companies_company_id_data_info_post',

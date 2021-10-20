@@ -84,13 +84,13 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(ModelNormal):
         """
         lazy_import()
         return {
+            'enabled': (bool,),  # noqa: E501
+            'source_type': (CodatClientsApiClientContractSourceType,),  # noqa: E501
             'key': (str, none_type,),  # noqa: E501
             'logo_url': (str, none_type,),  # noqa: E501
             'name': (str, none_type,),  # noqa: E501
-            'enabled': (bool,),  # noqa: E501
             'source_id': (str,),  # noqa: E501
             'integration_id': (str,),  # noqa: E501
-            'source_type': (CodatClientsApiClientContractSourceType,),  # noqa: E501
             'is_offline_connector': (bool,),  # noqa: E501
             'is_beta': (bool,),  # noqa: E501
             'supported_environments': (CodatClientsApiClientContractIntegrationSupportedEnvironments,),  # noqa: E501
@@ -103,13 +103,13 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(ModelNormal):
 
 
     attribute_map = {
+        'enabled': 'enabled',  # noqa: E501
+        'source_type': 'sourceType',  # noqa: E501
         'key': 'key',  # noqa: E501
         'logo_url': 'logoUrl',  # noqa: E501
         'name': 'name',  # noqa: E501
-        'enabled': 'enabled',  # noqa: E501
         'source_id': 'sourceId',  # noqa: E501
         'integration_id': 'integrationId',  # noqa: E501
-        'source_type': 'sourceType',  # noqa: E501
         'is_offline_connector': 'isOfflineConnector',  # noqa: E501
         'is_beta': 'isBeta',  # noqa: E501
         'supported_environments': 'supportedEnvironments',  # noqa: E501
@@ -157,13 +157,13 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            enabled (bool): [optional]  # noqa: E501
+            source_type (CodatClientsApiClientContractSourceType): [optional]  # noqa: E501
             key (str, none_type): [optional]  # noqa: E501
             logo_url (str, none_type): [optional]  # noqa: E501
             name (str, none_type): [optional]  # noqa: E501
-            enabled (bool): [optional]  # noqa: E501
             source_id (str): [optional]  # noqa: E501
             integration_id (str): [optional]  # noqa: E501
-            source_type (CodatClientsApiClientContractSourceType): [optional]  # noqa: E501
             is_offline_connector (bool): [optional]  # noqa: E501
             is_beta (bool): [optional]  # noqa: E501
             supported_environments (CodatClientsApiClientContractIntegrationSupportedEnvironments): [optional]  # noqa: E501
@@ -249,13 +249,13 @@ class CodatPublicApiModelsPlatformCredentialsPlatformSourceModel(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            enabled (bool): [optional]  # noqa: E501
+            source_type (CodatClientsApiClientContractSourceType): [optional]  # noqa: E501
             key (str, none_type): [optional]  # noqa: E501
             logo_url (str, none_type): [optional]  # noqa: E501
             name (str, none_type): [optional]  # noqa: E501
-            enabled (bool): [optional]  # noqa: E501
             source_id (str): [optional]  # noqa: E501
             integration_id (str): [optional]  # noqa: E501
-            source_type (CodatClientsApiClientContractSourceType): [optional]  # noqa: E501
             is_offline_connector (bool): [optional]  # noqa: E501
             is_beta (bool): [optional]  # noqa: E501
             supported_environments (CodatClientsApiClientContractIntegrationSupportedEnvironments): [optional]  # noqa: E501

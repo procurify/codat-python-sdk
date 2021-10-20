@@ -32,11 +32,9 @@ from codat_python_sdk.exceptions import ApiAttributeError
 def lazy_import():
     from codat_python_sdk.model.codat_data_contracts_datasets_accounts_payable_is_billed_to_type import CodatDataContractsDatasetsAccountsPayableIsBilledToType
     from codat_python_sdk.model.codat_data_contracts_datasets_customer_ref import CodatDataContractsDatasetsCustomerRef
-    from codat_python_sdk.model.codat_data_contracts_datasets_project_ref import CodatDataContractsDatasetsProjectRef
     from codat_python_sdk.model.codat_data_contracts_datasets_tracking_category_ref import CodatDataContractsDatasetsTrackingCategoryRef
     globals()['CodatDataContractsDatasetsAccountsPayableIsBilledToType'] = CodatDataContractsDatasetsAccountsPayableIsBilledToType
     globals()['CodatDataContractsDatasetsCustomerRef'] = CodatDataContractsDatasetsCustomerRef
-    globals()['CodatDataContractsDatasetsProjectRef'] = CodatDataContractsDatasetsProjectRef
     globals()['CodatDataContractsDatasetsTrackingCategoryRef'] = CodatDataContractsDatasetsTrackingCategoryRef
 
 
@@ -87,8 +85,7 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
         lazy_import()
         return {
             'category_refs': ([CodatDataContractsDatasetsTrackingCategoryRef],),  # noqa: E501
-            'is_billed_to': (CodatDataContractsDatasetsAccountsPayableIsBilledToType,),  # noqa: E501
-            'project_ref': (CodatDataContractsDatasetsProjectRef,),  # noqa: E501
+            'is_rebilled_to': (CodatDataContractsDatasetsAccountsPayableIsBilledToType,),  # noqa: E501
             'customer_ref': (CodatDataContractsDatasetsCustomerRef,),  # noqa: E501
         }
 
@@ -99,8 +96,7 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
 
     attribute_map = {
         'category_refs': 'categoryRefs',  # noqa: E501
-        'is_billed_to': 'isBilledTo',  # noqa: E501
-        'project_ref': 'projectRef',  # noqa: E501
+        'is_rebilled_to': 'isRebilledTo',  # noqa: E501
         'customer_ref': 'customerRef',  # noqa: E501
     }
 
@@ -111,12 +107,12 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, category_refs, is_billed_to, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, category_refs, is_rebilled_to, *args, **kwargs):  # noqa: E501
         """CodatDataContractsDatasetsAccountsPayableTracking - a model defined in OpenAPI
 
         Args:
             category_refs ([CodatDataContractsDatasetsTrackingCategoryRef]):
-            is_billed_to (CodatDataContractsDatasetsAccountsPayableIsBilledToType):
+            is_rebilled_to (CodatDataContractsDatasetsAccountsPayableIsBilledToType):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -149,7 +145,6 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            project_ref (CodatDataContractsDatasetsProjectRef): [optional]  # noqa: E501
             customer_ref (CodatDataContractsDatasetsCustomerRef): [optional]  # noqa: E501
         """
 
@@ -179,7 +174,7 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.category_refs = category_refs
-        self.is_billed_to = is_billed_to
+        self.is_rebilled_to = is_rebilled_to
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \
@@ -200,12 +195,12 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, category_refs, is_billed_to, *args, **kwargs):  # noqa: E501
+    def __init__(self, category_refs, is_rebilled_to, *args, **kwargs):  # noqa: E501
         """CodatDataContractsDatasetsAccountsPayableTracking - a model defined in OpenAPI
 
         Args:
             category_refs ([CodatDataContractsDatasetsTrackingCategoryRef]):
-            is_billed_to (CodatDataContractsDatasetsAccountsPayableIsBilledToType):
+            is_rebilled_to (CodatDataContractsDatasetsAccountsPayableIsBilledToType):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -238,7 +233,6 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            project_ref (CodatDataContractsDatasetsProjectRef): [optional]  # noqa: E501
             customer_ref (CodatDataContractsDatasetsCustomerRef): [optional]  # noqa: E501
         """
 
@@ -266,7 +260,7 @@ class CodatDataContractsDatasetsAccountsPayableTracking(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.category_refs = category_refs
-        self.is_billed_to = is_billed_to
+        self.is_rebilled_to = is_rebilled_to
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \

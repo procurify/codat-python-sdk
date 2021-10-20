@@ -31,8 +31,10 @@ from codat_python_sdk.exceptions import ApiAttributeError
 
 def lazy_import():
     from codat_python_sdk.model.codat_data_contracts_datasets_journal_line import CodatDataContractsDatasetsJournalLine
+    from codat_python_sdk.model.codat_data_contracts_datasets_journal_ref import CodatDataContractsDatasetsJournalRef
     from codat_python_sdk.model.codat_data_contracts_datasets_record_ref import CodatDataContractsDatasetsRecordRef
     globals()['CodatDataContractsDatasetsJournalLine'] = CodatDataContractsDatasetsJournalLine
+    globals()['CodatDataContractsDatasetsJournalRef'] = CodatDataContractsDatasetsJournalRef
     globals()['CodatDataContractsDatasetsRecordRef'] = CodatDataContractsDatasetsRecordRef
 
 
@@ -86,6 +88,7 @@ class CodatDataContractsDatasetsJournalEntry(ModelNormal):
             'posted_on': (datetime, none_type,),  # noqa: E501
             'created_on': (datetime, none_type,),  # noqa: E501
             'updated_on': (datetime, none_type,),  # noqa: E501
+            'journal_ref': (CodatDataContractsDatasetsJournalRef,),  # noqa: E501
             'journal_lines': ([CodatDataContractsDatasetsJournalLine], none_type,),  # noqa: E501
             'modified_date': (datetime, none_type,),  # noqa: E501
             'source_modified_date': (datetime, none_type,),  # noqa: E501
@@ -102,6 +105,7 @@ class CodatDataContractsDatasetsJournalEntry(ModelNormal):
         'posted_on': 'postedOn',  # noqa: E501
         'created_on': 'createdOn',  # noqa: E501
         'updated_on': 'updatedOn',  # noqa: E501
+        'journal_ref': 'journalRef',  # noqa: E501
         'journal_lines': 'journalLines',  # noqa: E501
         'modified_date': 'modifiedDate',  # noqa: E501
         'source_modified_date': 'sourceModifiedDate',  # noqa: E501
@@ -153,6 +157,7 @@ class CodatDataContractsDatasetsJournalEntry(ModelNormal):
             posted_on (datetime, none_type): [optional]  # noqa: E501
             created_on (datetime, none_type): [optional]  # noqa: E501
             updated_on (datetime, none_type): [optional]  # noqa: E501
+            journal_ref (CodatDataContractsDatasetsJournalRef): [optional]  # noqa: E501
             journal_lines ([CodatDataContractsDatasetsJournalLine], none_type): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
             source_modified_date (datetime, none_type): [optional]  # noqa: E501
@@ -242,6 +247,7 @@ class CodatDataContractsDatasetsJournalEntry(ModelNormal):
             posted_on (datetime, none_type): [optional]  # noqa: E501
             created_on (datetime, none_type): [optional]  # noqa: E501
             updated_on (datetime, none_type): [optional]  # noqa: E501
+            journal_ref (CodatDataContractsDatasetsJournalRef): [optional]  # noqa: E501
             journal_lines ([CodatDataContractsDatasetsJournalLine], none_type): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
             source_modified_date (datetime, none_type): [optional]  # noqa: E501

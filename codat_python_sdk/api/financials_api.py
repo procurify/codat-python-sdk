@@ -116,7 +116,8 @@ class FinancialsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataBalanceSheetResponse,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/financials/balanceSheet',
                 'operation_id': 'companies_company_id_data_financials_balance_sheet_get',
@@ -189,7 +190,7 @@ class FinancialsApi(object):
             periods_to_compare,
             **kwargs
         ):
-            """Gets the latest balance sheet for a company.  # noqa: E501
+            """Gets the latest cash flow statement for a company.  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
@@ -260,7 +261,8 @@ class FinancialsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataCashFlowStatementResponse,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/financials/cashFlowStatement',
                 'operation_id': 'companies_company_id_data_financials_cash_flow_statement_get',
@@ -404,7 +406,8 @@ class FinancialsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataProfitAndLossResponse,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/financials/profitAndLoss',
                 'operation_id': 'companies_company_id_data_financials_profit_and_loss_get',

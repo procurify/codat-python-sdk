@@ -100,7 +100,8 @@ class MetricsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsClientsClientCompanyMetricsModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/metrics/companies',
                 'operation_id': 'metrics_companies_get',

@@ -121,7 +121,8 @@ class BillsApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/bills/{billId}/attachments/{attachmentId}/download',
                 'operation_id': 'companies_company_id_connections_connection_id_data_bills_bill_id_attachments_attachment_id_download_get',
@@ -267,7 +268,8 @@ class BillsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAttachmentsDatasetAttachment,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/bills/{billId}/attachments/{attachmentId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_bills_bill_id_attachments_attachment_id_get',
@@ -411,7 +413,8 @@ class BillsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAttachmentsDataset,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/bills/{billId}/attachments',
                 'operation_id': 'companies_company_id_connections_connection_id_data_bills_bill_id_attachments_get',
@@ -549,7 +552,8 @@ class BillsApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/bills/{billId}/attachments',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bills_bill_id_attachments_post',
@@ -688,7 +692,8 @@ class BillsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBillPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/bills/{billId}',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bills_bill_id_put',
@@ -840,7 +845,8 @@ class BillsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBillPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/bills',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bills_post',
@@ -979,7 +985,8 @@ class BillsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBill,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/bills/{billId}',
                 'operation_id': 'companies_company_id_data_bills_bill_id_get',
@@ -1110,7 +1117,8 @@ class BillsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBillPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/bills',
                 'operation_id': 'companies_company_id_data_bills_get',

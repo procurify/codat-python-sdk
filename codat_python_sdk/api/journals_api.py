@@ -113,7 +113,8 @@ class JournalsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsJournalEntryPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/journalEntries',
                 'operation_id': 'companies_company_id_connections_connection_id_push_journal_entries_post',
@@ -255,7 +256,8 @@ class JournalsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsJournalEntryPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/journalEntries',
                 'operation_id': 'companies_company_id_data_journal_entries_get',
@@ -398,7 +400,8 @@ class JournalsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsJournalEntry,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/journalEntries/{journalEntryId}',
                 'operation_id': 'companies_company_id_data_journal_entries_journal_entry_id_get',

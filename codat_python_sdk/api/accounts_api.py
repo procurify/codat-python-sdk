@@ -121,7 +121,8 @@ class AccountsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsMetadataAccountCategoriesModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/metadata/accounts/{accountId}/categories',
                 'operation_id': 'companies_company_id_connections_connection_id_metadata_accounts_account_id_categories_get',
@@ -260,7 +261,8 @@ class AccountsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsMetadataAccountCategoriesModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/metadata/accounts/{accountId}/categories',
                 'operation_id': 'companies_company_id_connections_connection_id_metadata_accounts_account_id_categories_patch',
@@ -407,7 +409,8 @@ class AccountsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsMetadataAccountCategoriesModelPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/metadata/accounts/categories',
                 'operation_id': 'companies_company_id_connections_connection_id_metadata_accounts_categories_get',
@@ -557,7 +560,8 @@ class AccountsApi(object):
             settings={
                 'response_type': ([CodatPublicApiModelsMetadataAccountCategoriesModel],),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/metadata/accounts/categories',
                 'operation_id': 'companies_company_id_connections_connection_id_metadata_accounts_categories_patch',
@@ -693,7 +697,8 @@ class AccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAccountPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/accounts',
                 'operation_id': 'companies_company_id_connections_connection_id_push_accounts_post',
@@ -832,7 +837,8 @@ class AccountsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataAccountResponse,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/accounts/{accountId}',
                 'operation_id': 'companies_company_id_data_accounts_account_id_get',
@@ -963,7 +969,8 @@ class AccountsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAccountPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/accounts',
                 'operation_id': 'companies_company_id_data_accounts_get',
@@ -1097,7 +1104,8 @@ class AccountsApi(object):
             settings={
                 'response_type': ([CodatPublicApiModelsMetadataValidCategoryType],),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/metadata/accounts/categories',
                 'operation_id': 'metadata_accounts_categories_get',

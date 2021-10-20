@@ -10,19 +10,20 @@ Method | HTTP request | Description
 
 
 # **companies_company_id_connections_connection_id_push_bill_credit_notes_post**
-> CodatDataContractsDatasetsBillCreditNotePushOperation companies_company_id_connections_connection_id_push_bill_credit_notes_post(company_id, connection_id)
+> CodatDataContractsDatasetsLegacyBillCreditNotePushOperation companies_company_id_connections_connection_id_push_bill_credit_notes_post(company_id, connection_id)
 
 Posts a new billCreditNote to the accounting package for a given company.
 
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
 from codat_python_sdk.api import bill_credit_notes_api
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note import CodatDataContractsDatasetsBillCreditNote
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note_push_operation import CodatDataContractsDatasetsBillCreditNotePushOperation
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note_push_operation import CodatDataContractsDatasetsLegacyBillCreditNotePushOperation
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note import CodatDataContractsDatasetsLegacyBillCreditNote
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
@@ -41,6 +42,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -48,7 +55,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
     company_id = "companyId_example" # str | 
     connection_id = "connectionId_example" # str | 
     timeout_in_minutes = 1 # int |  (optional)
-    codat_data_contracts_datasets_bill_credit_note = CodatDataContractsDatasetsBillCreditNote(
+    codat_data_contracts_datasets_legacy_bill_credit_note = CodatDataContractsDatasetsLegacyBillCreditNote(
         id="id_example",
         bill_credit_note_number="bill_credit_note_number_example",
         supplier_ref=CodatDataContractsDatasetsSupplierRef(
@@ -108,20 +115,16 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
                             name="name_example",
                         ),
                     ],
-                    project_ref=CodatDataContractsDatasetsProjectRef(
-                        id="id_example",
-                        name="name_example",
-                    ),
                     customer_ref=CodatDataContractsDatasetsCustomerRef(
                         id="id_example",
                         company_name="company_name_example",
                     ),
-                    is_billed_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
+                    is_rebilled_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
                 ),
             ),
         ],
         payment_allocations=[
-            CodatDataContractsDatasetsCreditNotePaymentAllocation(
+            CodatDataContractsDatasetsLegacyCreditNotePaymentAllocation(
                 id="id_example",
                 total_amount=3.14,
                 currency="currency_example",
@@ -139,7 +142,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
         modified_date=dateutil_parser('1970-01-01T00:00:00.00Z'),
         source_modified_date=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note="note_example",
-    ) # CodatDataContractsDatasetsBillCreditNote |  (optional)
+    ) # CodatDataContractsDatasetsLegacyBillCreditNote |  (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -153,7 +156,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
     # and optional values
     try:
         # Posts a new billCreditNote to the accounting package for a given company.
-        api_response = api_instance.companies_company_id_connections_connection_id_push_bill_credit_notes_post(company_id, connection_id, timeout_in_minutes=timeout_in_minutes, codat_data_contracts_datasets_bill_credit_note=codat_data_contracts_datasets_bill_credit_note)
+        api_response = api_instance.companies_company_id_connections_connection_id_push_bill_credit_notes_post(company_id, connection_id, timeout_in_minutes=timeout_in_minutes, codat_data_contracts_datasets_legacy_bill_credit_note=codat_data_contracts_datasets_legacy_bill_credit_note)
         pprint(api_response)
     except codat_python_sdk.ApiException as e:
         print("Exception when calling BillCreditNotesApi->companies_company_id_connections_connection_id_push_bill_credit_notes_post: %s\n" % e)
@@ -167,15 +170,15 @@ Name | Type | Description  | Notes
  **company_id** | **str**|  |
  **connection_id** | **str**|  |
  **timeout_in_minutes** | **int**|  | [optional]
- **codat_data_contracts_datasets_bill_credit_note** | [**CodatDataContractsDatasetsBillCreditNote**](CodatDataContractsDatasetsBillCreditNote.md)|  | [optional]
+ **codat_data_contracts_datasets_legacy_bill_credit_note** | [**CodatDataContractsDatasetsLegacyBillCreditNote**](CodatDataContractsDatasetsLegacyBillCreditNote.md)|  | [optional]
 
 ### Return type
 
-[**CodatDataContractsDatasetsBillCreditNotePushOperation**](CodatDataContractsDatasetsBillCreditNotePushOperation.md)
+[**CodatDataContractsDatasetsLegacyBillCreditNotePushOperation**](CodatDataContractsDatasetsLegacyBillCreditNotePushOperation.md)
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -191,18 +194,19 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **companies_company_id_data_bill_credit_notes_bill_credit_note_id_get**
-> CodatDataContractsDatasetsBillCreditNote companies_company_id_data_bill_credit_notes_bill_credit_note_id_get(company_id, bill_credit_note_id)
+> CodatDataContractsDatasetsLegacyBillCreditNote companies_company_id_data_bill_credit_notes_bill_credit_note_id_get(company_id, bill_credit_note_id)
 
 Gets a single billCreditNote corresponding to the supplied Id
 
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
 from codat_python_sdk.api import bill_credit_notes_api
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note import CodatDataContractsDatasetsBillCreditNote
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note import CodatDataContractsDatasetsLegacyBillCreditNote
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
@@ -220,6 +224,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -247,11 +257,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CodatDataContractsDatasetsBillCreditNote**](CodatDataContractsDatasetsBillCreditNote.md)
+[**CodatDataContractsDatasetsLegacyBillCreditNote**](CodatDataContractsDatasetsLegacyBillCreditNote.md)
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -267,18 +277,19 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **companies_company_id_data_bill_credit_notes_get**
-> CodatDataContractsDatasetsBillCreditNotePagedResponseModel companies_company_id_data_bill_credit_notes_get(company_id, )
+> CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel companies_company_id_data_bill_credit_notes_get(company_id, )
 
 Gets a list of all bill credit notes for a company, with pagination
 
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
 from codat_python_sdk.api import bill_credit_notes_api
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note_paged_response_model import CodatDataContractsDatasetsBillCreditNotePagedResponseModel
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note_paged_response_model import CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
@@ -296,6 +307,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -337,11 +354,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CodatDataContractsDatasetsBillCreditNotePagedResponseModel**](CodatDataContractsDatasetsBillCreditNotePagedResponseModel.md)
+[**CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel**](CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel.md)
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 

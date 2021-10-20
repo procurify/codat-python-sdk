@@ -115,7 +115,8 @@ class DirectIncomesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsDirectIncome,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/directIncomes/{directIncomeId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_direct_incomes_direct_income_id_get',
@@ -256,7 +257,8 @@ class DirectIncomesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsDirectIncomePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/directIncomes',
                 'operation_id': 'companies_company_id_connections_connection_id_data_direct_incomes_get',
@@ -407,7 +409,8 @@ class DirectIncomesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsDirectIncomePushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/directIncomes',
                 'operation_id': 'companies_company_id_connections_connection_id_push_direct_incomes_post',

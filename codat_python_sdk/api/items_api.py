@@ -113,7 +113,8 @@ class ItemsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsItemPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/items',
                 'operation_id': 'companies_company_id_connections_connection_id_push_items_post',
@@ -255,7 +256,8 @@ class ItemsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsItemPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/items',
                 'operation_id': 'companies_company_id_data_items_get',
@@ -398,7 +400,8 @@ class ItemsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsItem,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/items/{itemId}',
                 'operation_id': 'companies_company_id_data_items_item_id_get',

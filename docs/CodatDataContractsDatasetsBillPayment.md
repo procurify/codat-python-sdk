@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **currency** | **str, none_type** |  | [optional] 
 **currency_rate** | **float, none_type** |  | [optional] 
 **note** | **str, none_type** |  | [optional] 
+**payment_method_ref** | [**CodatDataContractsDatasetsPaymentMethodRef**](CodatDataContractsDatasetsPaymentMethodRef.md) |  | [optional] 
 **lines** | [**[CodatDataContractsDatasetsBillPaymentLine], none_type**](CodatDataContractsDatasetsBillPaymentLine.md) |  | [optional] 
 **modified_date** | **datetime, none_type** |  | [optional] 
 **source_modified_date** | **datetime, none_type** |  | [optional] 

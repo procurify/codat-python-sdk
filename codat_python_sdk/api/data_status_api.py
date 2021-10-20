@@ -105,7 +105,8 @@ class DataStatusApi(object):
             settings={
                 'response_type': ({str: (CodatPublicApiModelsDataDataStatus,)},),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/dataStatus',
                 'operation_id': 'companies_company_id_data_status_get',

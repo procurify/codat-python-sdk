@@ -395,6 +395,13 @@ conf = codat_python_sdk.Configuration(
                     'API Key Auth',
                 ),
             }
+        if self.access_token is not None:
+            auth['Codat Login'] = {
+                'type': 'oauth2',
+                'in': 'header',
+                'key': 'Authorization',
+                'value': 'Bearer ' + self.access_token
+            }
         return auth
 
     def to_debug_report(self):
