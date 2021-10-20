@@ -32,9 +32,11 @@ from codat_python_sdk.exceptions import ApiAttributeError
 def lazy_import():
     from codat_python_sdk.model.codat_data_contracts_datasets_account_ref import CodatDataContractsDatasetsAccountRef
     from codat_python_sdk.model.codat_data_contracts_datasets_bill_payment_line import CodatDataContractsDatasetsBillPaymentLine
+    from codat_python_sdk.model.codat_data_contracts_datasets_payment_method_ref import CodatDataContractsDatasetsPaymentMethodRef
     from codat_python_sdk.model.codat_data_contracts_datasets_supplier_ref import CodatDataContractsDatasetsSupplierRef
     globals()['CodatDataContractsDatasetsAccountRef'] = CodatDataContractsDatasetsAccountRef
     globals()['CodatDataContractsDatasetsBillPaymentLine'] = CodatDataContractsDatasetsBillPaymentLine
+    globals()['CodatDataContractsDatasetsPaymentMethodRef'] = CodatDataContractsDatasetsPaymentMethodRef
     globals()['CodatDataContractsDatasetsSupplierRef'] = CodatDataContractsDatasetsSupplierRef
 
 
@@ -92,6 +94,7 @@ class CodatDataContractsDatasetsBillPayment(ModelNormal):
             'currency': (str, none_type,),  # noqa: E501
             'currency_rate': (float, none_type,),  # noqa: E501
             'note': (str, none_type,),  # noqa: E501
+            'payment_method_ref': (CodatDataContractsDatasetsPaymentMethodRef,),  # noqa: E501
             'lines': ([CodatDataContractsDatasetsBillPaymentLine], none_type,),  # noqa: E501
             'modified_date': (datetime, none_type,),  # noqa: E501
             'source_modified_date': (datetime, none_type,),  # noqa: E501
@@ -112,6 +115,7 @@ class CodatDataContractsDatasetsBillPayment(ModelNormal):
         'currency': 'currency',  # noqa: E501
         'currency_rate': 'currencyRate',  # noqa: E501
         'note': 'note',  # noqa: E501
+        'payment_method_ref': 'paymentMethodRef',  # noqa: E501
         'lines': 'lines',  # noqa: E501
         'modified_date': 'modifiedDate',  # noqa: E501
         'source_modified_date': 'sourceModifiedDate',  # noqa: E501
@@ -169,6 +173,7 @@ class CodatDataContractsDatasetsBillPayment(ModelNormal):
             currency (str, none_type): [optional]  # noqa: E501
             currency_rate (float, none_type): [optional]  # noqa: E501
             note (str, none_type): [optional]  # noqa: E501
+            payment_method_ref (CodatDataContractsDatasetsPaymentMethodRef): [optional]  # noqa: E501
             lines ([CodatDataContractsDatasetsBillPaymentLine], none_type): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
             source_modified_date (datetime, none_type): [optional]  # noqa: E501
@@ -265,6 +270,7 @@ class CodatDataContractsDatasetsBillPayment(ModelNormal):
             currency (str, none_type): [optional]  # noqa: E501
             currency_rate (float, none_type): [optional]  # noqa: E501
             note (str, none_type): [optional]  # noqa: E501
+            payment_method_ref (CodatDataContractsDatasetsPaymentMethodRef): [optional]  # noqa: E501
             lines ([CodatDataContractsDatasetsBillPaymentLine], none_type): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
             source_modified_date (datetime, none_type): [optional]  # noqa: E501

@@ -30,7 +30,9 @@ from codat_python_sdk.exceptions import ApiAttributeError
 
 
 def lazy_import():
+    from codat_python_sdk.model.codat_data_contracts_datasets_commerce_inventory import CodatDataContractsDatasetsCommerceInventory
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_product_variant_price import CodatDataContractsDatasetsCommerceProductVariantPrice
+    globals()['CodatDataContractsDatasetsCommerceInventory'] = CodatDataContractsDatasetsCommerceInventory
     globals()['CodatDataContractsDatasetsCommerceProductVariantPrice'] = CodatDataContractsDatasetsCommerceProductVariantPrice
 
 
@@ -84,8 +86,12 @@ class CodatDataContractsDatasetsCommerceProductVariant(ModelNormal):
             'name': (str, none_type,),  # noqa: E501
             'quantity': (float,),  # noqa: E501
             'is_tax_enabled': (bool,),  # noqa: E501
+            'sku': (str, none_type,),  # noqa: E501
+            'barcode': (str, none_type,),  # noqa: E501
+            'unit_of_measure': (str, none_type,),  # noqa: E501
             'vat_percentage': (float,),  # noqa: E501
             'prices': ([CodatDataContractsDatasetsCommerceProductVariantPrice], none_type,),  # noqa: E501
+            'inventory': (CodatDataContractsDatasetsCommerceInventory,),  # noqa: E501
             'shipping_required': (bool,),  # noqa: E501
             'created_date': (datetime,),  # noqa: E501
         }
@@ -100,8 +106,12 @@ class CodatDataContractsDatasetsCommerceProductVariant(ModelNormal):
         'name': 'name',  # noqa: E501
         'quantity': 'quantity',  # noqa: E501
         'is_tax_enabled': 'isTaxEnabled',  # noqa: E501
+        'sku': 'sku',  # noqa: E501
+        'barcode': 'barcode',  # noqa: E501
+        'unit_of_measure': 'unitOfMeasure',  # noqa: E501
         'vat_percentage': 'vatPercentage',  # noqa: E501
         'prices': 'prices',  # noqa: E501
+        'inventory': 'inventory',  # noqa: E501
         'shipping_required': 'shippingRequired',  # noqa: E501
         'created_date': 'createdDate',  # noqa: E501
     }
@@ -151,8 +161,12 @@ class CodatDataContractsDatasetsCommerceProductVariant(ModelNormal):
             name (str, none_type): [optional]  # noqa: E501
             quantity (float): [optional]  # noqa: E501
             is_tax_enabled (bool): [optional]  # noqa: E501
+            sku (str, none_type): [optional]  # noqa: E501
+            barcode (str, none_type): [optional]  # noqa: E501
+            unit_of_measure (str, none_type): [optional]  # noqa: E501
             vat_percentage (float): [optional]  # noqa: E501
             prices ([CodatDataContractsDatasetsCommerceProductVariantPrice], none_type): [optional]  # noqa: E501
+            inventory (CodatDataContractsDatasetsCommerceInventory): [optional]  # noqa: E501
             shipping_required (bool): [optional]  # noqa: E501
             created_date (datetime): [optional]  # noqa: E501
         """
@@ -240,8 +254,12 @@ class CodatDataContractsDatasetsCommerceProductVariant(ModelNormal):
             name (str, none_type): [optional]  # noqa: E501
             quantity (float): [optional]  # noqa: E501
             is_tax_enabled (bool): [optional]  # noqa: E501
+            sku (str, none_type): [optional]  # noqa: E501
+            barcode (str, none_type): [optional]  # noqa: E501
+            unit_of_measure (str, none_type): [optional]  # noqa: E501
             vat_percentage (float): [optional]  # noqa: E501
             prices ([CodatDataContractsDatasetsCommerceProductVariantPrice], none_type): [optional]  # noqa: E501
+            inventory (CodatDataContractsDatasetsCommerceInventory): [optional]  # noqa: E501
             shipping_required (bool): [optional]  # noqa: E501
             created_date (datetime): [optional]  # noqa: E501
         """

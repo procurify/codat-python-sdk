@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **posted_on** | **datetime, none_type** |  | [optional] 
 **created_on** | **datetime, none_type** |  | [optional] 
 **updated_on** | **datetime, none_type** |  | [optional] 
+**journal_ref** | [**CodatDataContractsDatasetsJournalRef**](CodatDataContractsDatasetsJournalRef.md) |  | [optional] 
 **journal_lines** | [**[CodatDataContractsDatasetsJournalLine], none_type**](CodatDataContractsDatasetsJournalLine.md) |  | [optional] 
 **modified_date** | **datetime, none_type** |  | [optional] 
 **source_modified_date** | **datetime, none_type** |  | [optional] 

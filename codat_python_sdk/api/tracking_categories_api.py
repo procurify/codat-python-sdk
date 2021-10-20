@@ -113,7 +113,8 @@ class TrackingCategoriesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataTrackingCategoryPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/trackingCategories',
                 'operation_id': 'companies_company_id_data_tracking_categories_get',
@@ -256,7 +257,8 @@ class TrackingCategoriesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataTrackingCategoryTree,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/trackingCategories/{trackingCategoryId}',
                 'operation_id': 'companies_company_id_data_tracking_categories_tracking_category_id_get',

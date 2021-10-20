@@ -23,9 +23,9 @@ from codat_python_sdk.model_utils import (  # noqa: F401
 )
 from codat_python_sdk.model.codat_data_contracts_datasets_attachments_dataset import CodatDataContractsDatasetsAttachmentsDataset
 from codat_python_sdk.model.codat_data_contracts_datasets_attachments_dataset_attachment import CodatDataContractsDatasetsAttachmentsDatasetAttachment
-from codat_python_sdk.model.codat_data_contracts_datasets_invoice import CodatDataContractsDatasetsInvoice
-from codat_python_sdk.model.codat_data_contracts_datasets_invoice_paged_response_model import CodatDataContractsDatasetsInvoicePagedResponseModel
-from codat_python_sdk.model.codat_data_contracts_datasets_invoice_push_operation import CodatDataContractsDatasetsInvoicePushOperation
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_invoice import CodatDataContractsDatasetsLegacyInvoice
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_invoice_paged_response_model import CodatDataContractsDatasetsLegacyInvoicePagedResponseModel
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_invoice_push_operation import CodatDataContractsDatasetsLegacyInvoicePushOperation
 
 
 class InvoicesApi(object):
@@ -121,7 +121,8 @@ class InvoicesApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/invoices/{invoiceId}/attachments/{attachmentId}/download',
                 'operation_id': 'companies_company_id_connections_connection_id_data_invoices_invoice_id_attachments_attachment_id_download_get',
@@ -267,7 +268,8 @@ class InvoicesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAttachmentsDatasetAttachment,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/invoices/{invoiceId}/attachments/{attachmentId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_invoices_invoice_id_attachments_attachment_id_get',
@@ -411,7 +413,8 @@ class InvoicesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAttachmentsDataset,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/invoices/{invoiceId}/attachments',
                 'operation_id': 'companies_company_id_connections_connection_id_data_invoices_invoice_id_attachments_get',
@@ -549,7 +552,8 @@ class InvoicesApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/invoices/{invoiceId}/attachment',
                 'operation_id': 'companies_company_id_connections_connection_id_push_invoices_invoice_id_attachment_post',
@@ -631,7 +635,7 @@ class InvoicesApi(object):
             Keyword Args:
                 timeout_in_minutes (int): [optional]
                 force_update (bool): [optional] if omitted the server will use the default value of False
-                codat_data_contracts_datasets_invoice (CodatDataContractsDatasetsInvoice): [optional]
+                codat_data_contracts_datasets_legacy_invoice (CodatDataContractsDatasetsLegacyInvoice): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -653,7 +657,7 @@ class InvoicesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsInvoicePushOperation
+                CodatDataContractsDatasetsLegacyInvoicePushOperation
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -686,9 +690,10 @@ class InvoicesApi(object):
 
         self.companies_company_id_connections_connection_id_push_invoices_invoice_id_put = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsInvoicePushOperation,),
+                'response_type': (CodatDataContractsDatasetsLegacyInvoicePushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/invoices/{invoiceId}',
                 'operation_id': 'companies_company_id_connections_connection_id_push_invoices_invoice_id_put',
@@ -702,7 +707,7 @@ class InvoicesApi(object):
                     'invoice_id',
                     'timeout_in_minutes',
                     'force_update',
-                    'codat_data_contracts_datasets_invoice',
+                    'codat_data_contracts_datasets_legacy_invoice',
                 ],
                 'required': [
                     'company_id',
@@ -732,8 +737,8 @@ class InvoicesApi(object):
                         (int,),
                     'force_update':
                         (bool,),
-                    'codat_data_contracts_datasets_invoice':
-                        (CodatDataContractsDatasetsInvoice,),
+                    'codat_data_contracts_datasets_legacy_invoice':
+                        (CodatDataContractsDatasetsLegacyInvoice,),
                 },
                 'attribute_map': {
                     'company_id': 'companyId',
@@ -748,7 +753,7 @@ class InvoicesApi(object):
                     'invoice_id': 'path',
                     'timeout_in_minutes': 'query',
                     'force_update': 'query',
-                    'codat_data_contracts_datasets_invoice': 'body',
+                    'codat_data_contracts_datasets_legacy_invoice': 'body',
                 },
                 'collection_format_map': {
                 }
@@ -785,7 +790,7 @@ class InvoicesApi(object):
 
             Keyword Args:
                 timeout_in_minutes (int): [optional]
-                codat_data_contracts_datasets_invoice (CodatDataContractsDatasetsInvoice): [optional]
+                codat_data_contracts_datasets_legacy_invoice (CodatDataContractsDatasetsLegacyInvoice): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -807,7 +812,7 @@ class InvoicesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsInvoicePushOperation
+                CodatDataContractsDatasetsLegacyInvoicePushOperation
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -838,9 +843,10 @@ class InvoicesApi(object):
 
         self.companies_company_id_connections_connection_id_push_invoices_post = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsInvoicePushOperation,),
+                'response_type': (CodatDataContractsDatasetsLegacyInvoicePushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/invoices',
                 'operation_id': 'companies_company_id_connections_connection_id_push_invoices_post',
@@ -852,7 +858,7 @@ class InvoicesApi(object):
                     'company_id',
                     'connection_id',
                     'timeout_in_minutes',
-                    'codat_data_contracts_datasets_invoice',
+                    'codat_data_contracts_datasets_legacy_invoice',
                 ],
                 'required': [
                     'company_id',
@@ -877,8 +883,8 @@ class InvoicesApi(object):
                         (str,),
                     'timeout_in_minutes':
                         (int,),
-                    'codat_data_contracts_datasets_invoice':
-                        (CodatDataContractsDatasetsInvoice,),
+                    'codat_data_contracts_datasets_legacy_invoice':
+                        (CodatDataContractsDatasetsLegacyInvoice,),
                 },
                 'attribute_map': {
                     'company_id': 'companyId',
@@ -889,7 +895,7 @@ class InvoicesApi(object):
                     'company_id': 'path',
                     'connection_id': 'path',
                     'timeout_in_minutes': 'query',
-                    'codat_data_contracts_datasets_invoice': 'body',
+                    'codat_data_contracts_datasets_legacy_invoice': 'body',
                 },
                 'collection_format_map': {
                 }
@@ -949,7 +955,7 @@ class InvoicesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsInvoicePagedResponseModel
+                CodatDataContractsDatasetsLegacyInvoicePagedResponseModel
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -980,9 +986,10 @@ class InvoicesApi(object):
 
         self.companies_company_id_data_invoices_get = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsInvoicePagedResponseModel,),
+                'response_type': (CodatDataContractsDatasetsLegacyInvoicePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/invoices',
                 'operation_id': 'companies_company_id_data_invoices_get',
@@ -1092,7 +1099,7 @@ class InvoicesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsInvoice
+                CodatDataContractsDatasetsLegacyInvoice
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -1123,9 +1130,10 @@ class InvoicesApi(object):
 
         self.companies_company_id_data_invoices_invoice_id_get = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsInvoice,),
+                'response_type': (CodatDataContractsDatasetsLegacyInvoice,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/invoices/{invoiceId}',
                 'operation_id': 'companies_company_id_data_invoices_invoice_id_get',
@@ -1253,7 +1261,8 @@ class InvoicesApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/invoices/{invoiceId}/pdf',
                 'operation_id': 'companies_company_id_data_invoices_invoice_id_pdf_get',

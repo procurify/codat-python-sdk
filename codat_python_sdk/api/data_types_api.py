@@ -114,7 +114,8 @@ class DataTypesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsDataPushOptionsAggregate,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/dataTypes/{dataType}/options',
                 'operation_id': 'companies_company_id_connections_connection_id_data_types_data_type_options_get',
@@ -252,7 +253,8 @@ class DataTypesApi(object):
             settings={
                 'response_type': (CodatDataContractsPushPushOption,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/dataTypes/{dataType}/options/POST',
                 'operation_id': 'companies_company_id_connections_connection_id_data_types_data_type_options_post_get',
@@ -390,7 +392,8 @@ class DataTypesApi(object):
             settings={
                 'response_type': (CodatDataContractsPushPushOption,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/dataTypes/{dataType}/options/PUT',
                 'operation_id': 'companies_company_id_connections_connection_id_data_types_data_type_options_put_get',

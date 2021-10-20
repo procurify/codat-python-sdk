@@ -113,7 +113,8 @@ class BillPaymentsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBillPaymentPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/billPayments',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bill_payments_post',
@@ -252,7 +253,8 @@ class BillPaymentsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBillPayment,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/billPayments/{billPaymentId}',
                 'operation_id': 'companies_company_id_data_bill_payments_bill_payment_id_get',
@@ -383,7 +385,8 @@ class BillPaymentsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBillPaymentPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/billPayments',
                 'operation_id': 'companies_company_id_data_bill_payments_get',

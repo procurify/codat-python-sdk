@@ -79,7 +79,6 @@ class CodatRulesContractsResponsesAlert(ModelNormal):
             'rule_id': (str,),  # noqa: E501
             'company_id': (str,),  # noqa: E501
             'raised_on_utc': (datetime,),  # noqa: E501
-            'resolved_on_utc': (datetime, none_type,),  # noqa: E501
             'data': (bool, date, datetime, dict, float, int, list, str, none_type,),  # noqa: E501
         }
 
@@ -93,7 +92,6 @@ class CodatRulesContractsResponsesAlert(ModelNormal):
         'rule_id': 'ruleId',  # noqa: E501
         'company_id': 'companyId',  # noqa: E501
         'raised_on_utc': 'raisedOnUtc',  # noqa: E501
-        'resolved_on_utc': 'resolvedOnUtc',  # noqa: E501
         'data': 'data',  # noqa: E501
     }
 
@@ -142,7 +140,6 @@ class CodatRulesContractsResponsesAlert(ModelNormal):
             rule_id (str): [optional]  # noqa: E501
             company_id (str): [optional]  # noqa: E501
             raised_on_utc (datetime): [optional]  # noqa: E501
-            resolved_on_utc (datetime, none_type): [optional]  # noqa: E501
             data (bool, date, datetime, dict, float, int, list, str, none_type): [optional]  # noqa: E501
         """
 
@@ -229,7 +226,6 @@ class CodatRulesContractsResponsesAlert(ModelNormal):
             rule_id (str): [optional]  # noqa: E501
             company_id (str): [optional]  # noqa: E501
             raised_on_utc (datetime): [optional]  # noqa: E501
-            resolved_on_utc (datetime, none_type): [optional]  # noqa: E501
             data (bool, date, datetime, dict, float, int, list, str, none_type): [optional]  # noqa: E501
         """
 

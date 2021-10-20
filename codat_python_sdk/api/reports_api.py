@@ -107,7 +107,8 @@ class ReportsApi(object):
             settings={
                 'response_type': (bool,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/reports/agedCreditor/available',
                 'operation_id': 'companies_company_id_reports_aged_creditor_available_get',
@@ -228,7 +229,8 @@ class ReportsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAgedCreditorOutstandingICollectionReport,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/reports/agedCreditor',
                 'operation_id': 'companies_company_id_reports_aged_creditor_get',
@@ -361,7 +363,8 @@ class ReportsApi(object):
             settings={
                 'response_type': (bool,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/reports/agedDebtor/available',
                 'operation_id': 'companies_company_id_reports_aged_debtor_available_get',
@@ -482,7 +485,8 @@ class ReportsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAgedDebtorOutstandingICollectionReport,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/reports/agedDebtor',
                 'operation_id': 'companies_company_id_reports_aged_debtor_get',
@@ -618,7 +622,8 @@ class ReportsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompanyEventStream,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/reports/events',
                 'operation_id': 'companies_company_id_reports_events_get',

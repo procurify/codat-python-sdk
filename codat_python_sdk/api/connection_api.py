@@ -112,7 +112,8 @@ class ConnectionApi(object):
             settings={
                 'response_type': (bool,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}',
                 'operation_id': 'companies_company_id_connections_connection_id_delete',
@@ -240,7 +241,8 @@ class ConnectionApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyDataConnection,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}',
                 'operation_id': 'companies_company_id_connections_connection_id_get',
@@ -370,7 +372,8 @@ class ConnectionApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyDataConnection,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}',
                 'operation_id': 'companies_company_id_connections_connection_id_patch',
@@ -434,7 +437,7 @@ class ConnectionApi(object):
         def __companies_company_id_connections_get(
             self,
             company_id,
-            page=1,
+            page,
             **kwargs
         ):
             """Retrieve all data sources connected to a single company, including their connection statuses  # noqa: E501
@@ -442,12 +445,12 @@ class ConnectionApi(object):
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
-            >>> thread = api.companies_company_id_connections_get(company_id, page=1, async_req=True)
+            >>> thread = api.companies_company_id_connections_get(company_id, page, async_req=True)
             >>> result = thread.get()
 
             Args:
                 company_id (str):
-                page (int): defaults to 1, must be one of [1]
+                page (int):
 
             Keyword Args:
                 page_size (int): [optional] if omitted the server will use the default value of 100
@@ -507,7 +510,8 @@ class ConnectionApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyDataConnectionPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections',
                 'operation_id': 'companies_company_id_connections_get',
@@ -648,7 +652,8 @@ class ConnectionApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyDataConnection,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections',
                 'operation_id': 'companies_company_id_connections_post',

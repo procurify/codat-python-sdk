@@ -115,7 +115,8 @@ class DirectCostsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsDirectCost,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/directCosts/{directCostId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_direct_costs_direct_cost_id_get',
@@ -256,7 +257,8 @@ class DirectCostsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsDirectCostPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/directCosts',
                 'operation_id': 'companies_company_id_connections_connection_id_data_direct_costs_get',
@@ -407,7 +409,8 @@ class DirectCostsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsDirectCostPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/directCosts',
                 'operation_id': 'companies_company_id_connections_connection_id_push_direct_costs_post',

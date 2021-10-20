@@ -103,7 +103,8 @@ class SettingsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsClientsClientSettingsModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/settings',
                 'operation_id': 'settings_get',
@@ -214,7 +215,8 @@ class SettingsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsClientsIntegrationSettingsModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/settings/integrations/{integrationId}',
                 'operation_id': 'settings_integrations_integration_id_get',
@@ -333,7 +335,8 @@ class SettingsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsClientsIntegrationSettingsModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/settings/integrations/{integrationId}',
                 'operation_id': 'settings_integrations_integration_id_patch',
@@ -453,7 +456,8 @@ class SettingsApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsClientsClientSettingsModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/settings',
                 'operation_id': 'settings_patch',

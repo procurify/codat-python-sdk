@@ -113,7 +113,8 @@ class PurchaseOrdersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPurchaseOrderPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/purchaseOrders',
                 'operation_id': 'companies_company_id_connections_connection_id_push_purchase_orders_post',
@@ -259,7 +260,8 @@ class PurchaseOrdersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPurchaseOrderPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/purchaseOrders/{purchaseOrderId}',
                 'operation_id': 'companies_company_id_connections_connection_id_push_purchase_orders_purchase_order_id_put',
@@ -412,7 +414,8 @@ class PurchaseOrdersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPurchaseOrderPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/purchaseOrders',
                 'operation_id': 'companies_company_id_data_purchase_orders_get',
@@ -555,7 +558,8 @@ class PurchaseOrdersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsPurchaseOrder,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/purchaseOrders/{purchaseOrderId}',
                 'operation_id': 'companies_company_id_data_purchase_orders_purchase_order_id_get',

@@ -22,6 +22,7 @@ Method | HTTP request | Description
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -43,6 +44,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -76,7 +83,7 @@ void (empty response body)
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -99,6 +106,7 @@ void (empty response body)
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -121,6 +129,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -155,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -178,6 +192,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -200,6 +215,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -232,7 +253,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -255,6 +276,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -276,6 +298,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -307,7 +335,7 @@ void (empty response body)
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -330,6 +358,7 @@ Posts an updated bill to the accounting package for a given company.
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -353,6 +382,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -420,15 +455,11 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
                             name="name_example",
                         ),
                     ],
-                    project_ref=CodatDataContractsDatasetsProjectRef(
-                        id="id_example",
-                        name="name_example",
-                    ),
                     customer_ref=CodatDataContractsDatasetsCustomerRef(
                         id="id_example",
                         company_name="company_name_example",
                     ),
-                    is_billed_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
+                    is_rebilled_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
                 ),
                 is_direct_cost=True,
             ),
@@ -508,7 +539,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -531,6 +562,7 @@ Posts a new bill to the accounting package for a given company.
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -554,6 +586,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -619,15 +657,11 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
                             name="name_example",
                         ),
                     ],
-                    project_ref=CodatDataContractsDatasetsProjectRef(
-                        id="id_example",
-                        name="name_example",
-                    ),
                     customer_ref=CodatDataContractsDatasetsCustomerRef(
                         id="id_example",
                         company_name="company_name_example",
                     ),
-                    is_billed_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
+                    is_rebilled_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
                 ),
                 is_direct_cost=True,
             ),
@@ -705,7 +739,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -728,6 +762,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -750,6 +785,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -780,7 +821,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -803,6 +844,7 @@ Gets the latest bills for a company, with pagination
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -825,6 +867,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -870,7 +918,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 

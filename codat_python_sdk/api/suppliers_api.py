@@ -121,7 +121,8 @@ class SuppliersApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/suppliers/{supplierId}/attachments/{attachmentId}/download',
                 'operation_id': 'companies_company_id_connections_connection_id_data_suppliers_supplier_id_attachments_attachment_id_download_get',
@@ -267,7 +268,8 @@ class SuppliersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAttachmentsDatasetAttachment,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/suppliers/{supplierId}/attachments/{attachmentId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_suppliers_supplier_id_attachments_attachment_id_get',
@@ -411,7 +413,8 @@ class SuppliersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsAttachmentsDataset,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/suppliers/{supplierId}/attachments',
                 'operation_id': 'companies_company_id_connections_connection_id_data_suppliers_supplier_id_attachments_get',
@@ -547,7 +550,8 @@ class SuppliersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsSupplierPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/suppliers',
                 'operation_id': 'companies_company_id_connections_connection_id_push_suppliers_post',
@@ -689,7 +693,8 @@ class SuppliersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsSupplierPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/suppliers',
                 'operation_id': 'companies_company_id_data_suppliers_get',
@@ -832,7 +837,8 @@ class SuppliersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsSupplier,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/suppliers/{supplierId}',
                 'operation_id': 'companies_company_id_data_suppliers_supplier_id_get',

@@ -113,7 +113,8 @@ class TaxRatesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsTaxRatePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/taxRates',
                 'operation_id': 'companies_company_id_data_tax_rates_get',
@@ -256,7 +257,8 @@ class TaxRatesApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsTaxRate,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/taxRates/{taxRateId}',
                 'operation_id': 'companies_company_id_data_tax_rates_tax_rate_id_get',

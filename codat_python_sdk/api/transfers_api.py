@@ -118,7 +118,8 @@ class TransfersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsTransferPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/transfers',
                 'operation_id': 'companies_company_id_connections_connection_id_data_transfers_get',
@@ -271,7 +272,8 @@ class TransfersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsTransfer,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/data/transfers/{transferId}',
                 'operation_id': 'companies_company_id_connections_connection_id_data_transfers_transfer_id_get',
@@ -407,7 +409,8 @@ class TransfersApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsTransferPushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/transfers',
                 'operation_id': 'companies_company_id_connections_connection_id_push_transfers_post',

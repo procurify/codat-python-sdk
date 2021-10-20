@@ -111,7 +111,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}',
                 'operation_id': 'companies_company_id_delete',
@@ -227,7 +228,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompany,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}',
                 'operation_id': 'companies_company_id_get',
@@ -346,7 +348,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompany,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}',
                 'operation_id': 'companies_company_id_put',
@@ -470,7 +473,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompanySettings,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/settings',
                 'operation_id': 'companies_company_id_settings_get',
@@ -589,7 +593,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompanySettings,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/settings',
                 'operation_id': 'companies_company_id_settings_put',
@@ -713,7 +718,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatClientsApiClientContractCompanySyncSettings,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/syncSettings',
                 'operation_id': 'companies_company_id_sync_settings_get',
@@ -832,7 +838,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': None,
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/syncSettings',
                 'operation_id': 'companies_company_id_sync_settings_post',
@@ -957,7 +964,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompanyPagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies',
                 'operation_id': 'companies_get',
@@ -1086,7 +1094,8 @@ class CompaniesApi(object):
             settings={
                 'response_type': (CodatPublicApiModelsCompanyCompany,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies',
                 'operation_id': 'companies_post',

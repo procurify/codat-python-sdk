@@ -5,7 +5,6 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**rules_alerts_alert_id_get**](RulesApi.md#rules_alerts_alert_id_get) | **GET** /rules/alerts/{alertId} | 
-[**rules_alerts_alert_id_resolve_post**](RulesApi.md#rules_alerts_alert_id_resolve_post) | **POST** /rules/alerts/{alertId}/resolve | 
 [**rules_alerts_get**](RulesApi.md#rules_alerts_get) | **GET** /rules/alerts | 
 [**rules_get**](RulesApi.md#rules_get) | **GET** /rules | Fetch a list of rules a company is subscribed to
 [**rules_post**](RulesApi.md#rules_post) | **POST** /rules | Subscribe to a rule
@@ -23,6 +22,7 @@ Method | HTTP request | Description
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -45,6 +45,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -73,80 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Success |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **rules_alerts_alert_id_resolve_post**
-> CodatRulesContractsResponsesAlert rules_alerts_alert_id_resolve_post(alert_id)
-
-
-
-### Example
-
-* Api Key Authentication (API Key Auth):
-```python
-import time
-import codat_python_sdk
-from codat_python_sdk.api import rules_api
-from codat_python_sdk.model.codat_rules_contracts_responses_alert import CodatRulesContractsResponsesAlert
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost
-# See configuration.py for a list of all supported configuration parameters.
-configuration = codat_python_sdk.Configuration(
-    host = "http://localhost"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: API Key Auth
-configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['API Key Auth'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-with codat_python_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = rules_api.RulesApi(api_client)
-    alert_id = "alertId_example" # str | 
-
-    # example passing only required values which don't have defaults set
-    try:
-        api_response = api_instance.rules_alerts_alert_id_resolve_post(alert_id)
-        pprint(api_response)
-    except codat_python_sdk.ApiException as e:
-        print("Exception when calling RulesApi->rules_alerts_alert_id_resolve_post: %s\n" % e)
-```
-
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **alert_id** | **str**|  |
-
-### Return type
-
-[**CodatRulesContractsResponsesAlert**](CodatRulesContractsResponsesAlert.md)
-
-### Authorization
-
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -169,6 +102,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -191,6 +125,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -234,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -257,6 +197,7 @@ Fetch a list of rules a company is subscribed to
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -279,6 +220,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -324,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -347,6 +294,7 @@ Subscribe to a rule
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -370,6 +318,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -409,7 +363,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -432,6 +386,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -454,6 +409,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -497,7 +458,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -520,6 +481,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -541,6 +503,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -568,7 +536,7 @@ void (empty response body)
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -591,6 +559,7 @@ void (empty response body)
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -613,6 +582,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -641,7 +616,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -664,6 +639,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -686,6 +662,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -734,7 +716,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 

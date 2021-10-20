@@ -31,10 +31,12 @@ from codat_python_sdk.exceptions import ApiAttributeError
 
 def lazy_import():
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_customer_ref import CodatDataContractsDatasetsCommerceCustomerRef
+    from codat_python_sdk.model.codat_data_contracts_datasets_commerce_location_ref import CodatDataContractsDatasetsCommerceLocationRef
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_order_line_item import CodatDataContractsDatasetsCommerceOrderLineItem
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_payment_ref import CodatDataContractsDatasetsCommercePaymentRef
     from codat_python_sdk.model.codat_data_contracts_datasets_commerce_service_charge import CodatDataContractsDatasetsCommerceServiceCharge
     globals()['CodatDataContractsDatasetsCommerceCustomerRef'] = CodatDataContractsDatasetsCommerceCustomerRef
+    globals()['CodatDataContractsDatasetsCommerceLocationRef'] = CodatDataContractsDatasetsCommerceLocationRef
     globals()['CodatDataContractsDatasetsCommerceOrderLineItem'] = CodatDataContractsDatasetsCommerceOrderLineItem
     globals()['CodatDataContractsDatasetsCommercePaymentRef'] = CodatDataContractsDatasetsCommercePaymentRef
     globals()['CodatDataContractsDatasetsCommerceServiceCharge'] = CodatDataContractsDatasetsCommerceServiceCharge
@@ -100,6 +102,7 @@ class CodatDataContractsDatasetsCommerceOrder(ModelNormal):
             'order_line_items': ([CodatDataContractsDatasetsCommerceOrderLineItem], none_type,),  # noqa: E501
             'payments': ([CodatDataContractsDatasetsCommercePaymentRef], none_type,),  # noqa: E501
             'service_charges': ([CodatDataContractsDatasetsCommerceServiceCharge], none_type,),  # noqa: E501
+            'location_ref': (CodatDataContractsDatasetsCommerceLocationRef,),  # noqa: E501
             'customer_ref': (CodatDataContractsDatasetsCommerceCustomerRef,),  # noqa: E501
             'modified_date': (datetime, none_type,),  # noqa: E501
             'source_modified_date': (datetime, none_type,),  # noqa: E501
@@ -125,6 +128,7 @@ class CodatDataContractsDatasetsCommerceOrder(ModelNormal):
         'order_line_items': 'orderLineItems',  # noqa: E501
         'payments': 'payments',  # noqa: E501
         'service_charges': 'serviceCharges',  # noqa: E501
+        'location_ref': 'locationRef',  # noqa: E501
         'customer_ref': 'customerRef',  # noqa: E501
         'modified_date': 'modifiedDate',  # noqa: E501
         'source_modified_date': 'sourceModifiedDate',  # noqa: E501
@@ -185,6 +189,7 @@ class CodatDataContractsDatasetsCommerceOrder(ModelNormal):
             order_line_items ([CodatDataContractsDatasetsCommerceOrderLineItem], none_type): [optional]  # noqa: E501
             payments ([CodatDataContractsDatasetsCommercePaymentRef], none_type): [optional]  # noqa: E501
             service_charges ([CodatDataContractsDatasetsCommerceServiceCharge], none_type): [optional]  # noqa: E501
+            location_ref (CodatDataContractsDatasetsCommerceLocationRef): [optional]  # noqa: E501
             customer_ref (CodatDataContractsDatasetsCommerceCustomerRef): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
             source_modified_date (datetime, none_type): [optional]  # noqa: E501
@@ -283,6 +288,7 @@ class CodatDataContractsDatasetsCommerceOrder(ModelNormal):
             order_line_items ([CodatDataContractsDatasetsCommerceOrderLineItem], none_type): [optional]  # noqa: E501
             payments ([CodatDataContractsDatasetsCommercePaymentRef], none_type): [optional]  # noqa: E501
             service_charges ([CodatDataContractsDatasetsCommerceServiceCharge], none_type): [optional]  # noqa: E501
+            location_ref (CodatDataContractsDatasetsCommerceLocationRef): [optional]  # noqa: E501
             customer_ref (CodatDataContractsDatasetsCommerceCustomerRef): [optional]  # noqa: E501
             modified_date (datetime, none_type): [optional]  # noqa: E501
             source_modified_date (datetime, none_type): [optional]  # noqa: E501

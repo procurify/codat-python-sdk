@@ -21,9 +21,9 @@ from codat_python_sdk.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from codat_python_sdk.model.codat_data_contracts_datasets_credit_note import CodatDataContractsDatasetsCreditNote
-from codat_python_sdk.model.codat_data_contracts_datasets_credit_note_paged_response_model import CodatDataContractsDatasetsCreditNotePagedResponseModel
-from codat_python_sdk.model.codat_data_contracts_datasets_credit_note_push_operation import CodatDataContractsDatasetsCreditNotePushOperation
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_credit_note import CodatDataContractsDatasetsLegacyCreditNote
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_credit_note_paged_response_model import CodatDataContractsDatasetsLegacyCreditNotePagedResponseModel
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_credit_note_push_operation import CodatDataContractsDatasetsLegacyCreditNotePushOperation
 
 
 class CreditNotesApi(object):
@@ -61,7 +61,7 @@ class CreditNotesApi(object):
             Keyword Args:
                 timeout_in_minutes (int): [optional]
                 force_update (bool): [optional] if omitted the server will use the default value of False
-                codat_data_contracts_datasets_credit_note (CodatDataContractsDatasetsCreditNote): [optional]
+                codat_data_contracts_datasets_legacy_credit_note (CodatDataContractsDatasetsLegacyCreditNote): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -83,7 +83,7 @@ class CreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsCreditNotePushOperation
+                CodatDataContractsDatasetsLegacyCreditNotePushOperation
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -116,9 +116,10 @@ class CreditNotesApi(object):
 
         self.companies_company_id_connections_connection_id_push_credit_notes_credit_note_id_put = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsCreditNotePushOperation,),
+                'response_type': (CodatDataContractsDatasetsLegacyCreditNotePushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/creditNotes/{creditNoteId}',
                 'operation_id': 'companies_company_id_connections_connection_id_push_credit_notes_credit_note_id_put',
@@ -132,7 +133,7 @@ class CreditNotesApi(object):
                     'credit_note_id',
                     'timeout_in_minutes',
                     'force_update',
-                    'codat_data_contracts_datasets_credit_note',
+                    'codat_data_contracts_datasets_legacy_credit_note',
                 ],
                 'required': [
                     'company_id',
@@ -162,8 +163,8 @@ class CreditNotesApi(object):
                         (int,),
                     'force_update':
                         (bool,),
-                    'codat_data_contracts_datasets_credit_note':
-                        (CodatDataContractsDatasetsCreditNote,),
+                    'codat_data_contracts_datasets_legacy_credit_note':
+                        (CodatDataContractsDatasetsLegacyCreditNote,),
                 },
                 'attribute_map': {
                     'company_id': 'companyId',
@@ -178,7 +179,7 @@ class CreditNotesApi(object):
                     'credit_note_id': 'path',
                     'timeout_in_minutes': 'query',
                     'force_update': 'query',
-                    'codat_data_contracts_datasets_credit_note': 'body',
+                    'codat_data_contracts_datasets_legacy_credit_note': 'body',
                 },
                 'collection_format_map': {
                 }
@@ -215,7 +216,7 @@ class CreditNotesApi(object):
 
             Keyword Args:
                 timeout_in_minutes (int): [optional]
-                codat_data_contracts_datasets_credit_note (CodatDataContractsDatasetsCreditNote): [optional]
+                codat_data_contracts_datasets_legacy_credit_note (CodatDataContractsDatasetsLegacyCreditNote): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -237,7 +238,7 @@ class CreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsCreditNotePushOperation
+                CodatDataContractsDatasetsLegacyCreditNotePushOperation
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -268,9 +269,10 @@ class CreditNotesApi(object):
 
         self.companies_company_id_connections_connection_id_push_credit_notes_post = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsCreditNotePushOperation,),
+                'response_type': (CodatDataContractsDatasetsLegacyCreditNotePushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/creditNotes',
                 'operation_id': 'companies_company_id_connections_connection_id_push_credit_notes_post',
@@ -282,7 +284,7 @@ class CreditNotesApi(object):
                     'company_id',
                     'connection_id',
                     'timeout_in_minutes',
-                    'codat_data_contracts_datasets_credit_note',
+                    'codat_data_contracts_datasets_legacy_credit_note',
                 ],
                 'required': [
                     'company_id',
@@ -307,8 +309,8 @@ class CreditNotesApi(object):
                         (str,),
                     'timeout_in_minutes':
                         (int,),
-                    'codat_data_contracts_datasets_credit_note':
-                        (CodatDataContractsDatasetsCreditNote,),
+                    'codat_data_contracts_datasets_legacy_credit_note':
+                        (CodatDataContractsDatasetsLegacyCreditNote,),
                 },
                 'attribute_map': {
                     'company_id': 'companyId',
@@ -319,7 +321,7 @@ class CreditNotesApi(object):
                     'company_id': 'path',
                     'connection_id': 'path',
                     'timeout_in_minutes': 'query',
-                    'codat_data_contracts_datasets_credit_note': 'body',
+                    'codat_data_contracts_datasets_legacy_credit_note': 'body',
                 },
                 'collection_format_map': {
                 }
@@ -376,7 +378,7 @@ class CreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsCreditNote
+                CodatDataContractsDatasetsLegacyCreditNote
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -407,9 +409,10 @@ class CreditNotesApi(object):
 
         self.companies_company_id_data_credit_notes_credit_note_id_get = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsCreditNote,),
+                'response_type': (CodatDataContractsDatasetsLegacyCreditNote,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/creditNotes/{creditNoteId}',
                 'operation_id': 'companies_company_id_data_credit_notes_credit_note_id_get',
@@ -507,7 +510,7 @@ class CreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsCreditNotePagedResponseModel
+                CodatDataContractsDatasetsLegacyCreditNotePagedResponseModel
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -538,9 +541,10 @@ class CreditNotesApi(object):
 
         self.companies_company_id_data_credit_notes_get = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsCreditNotePagedResponseModel,),
+                'response_type': (CodatDataContractsDatasetsLegacyCreditNotePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/creditNotes',
                 'operation_id': 'companies_company_id_data_credit_notes_get',

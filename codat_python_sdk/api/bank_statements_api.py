@@ -107,7 +107,8 @@ class BankStatementsApi(object):
             settings={
                 'response_type': ([CodatDataContractsDatasetsBankStatementAccount],),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/bankStatements/accounts',
                 'operation_id': 'companies_company_id_data_bank_statements_accounts_get',
@@ -238,7 +239,8 @@ class BankStatementsApi(object):
             settings={
                 'response_type': (CodatDataContractsDatasetsBankStatementLinePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/bankStatements',
                 'operation_id': 'companies_company_id_data_bank_statements_get',

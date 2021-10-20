@@ -23,6 +23,7 @@ from codat_python_sdk.api.bills_api import BillsApi
 from codat_python_sdk.api.commerce_customers_api import CommerceCustomersApi
 from codat_python_sdk.api.commerce_disputes_api import CommerceDisputesApi
 from codat_python_sdk.api.commerce_info_api import CommerceInfoApi
+from codat_python_sdk.api.commerce_locations_api import CommerceLocationsApi
 from codat_python_sdk.api.commerce_orders_api import CommerceOrdersApi
 from codat_python_sdk.api.commerce_payments_api import CommercePaymentsApi
 from codat_python_sdk.api.commerce_products_api import CommerceProductsApi

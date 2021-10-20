@@ -21,9 +21,9 @@ from codat_python_sdk.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note import CodatDataContractsDatasetsBillCreditNote
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note_paged_response_model import CodatDataContractsDatasetsBillCreditNotePagedResponseModel
-from codat_python_sdk.model.codat_data_contracts_datasets_bill_credit_note_push_operation import CodatDataContractsDatasetsBillCreditNotePushOperation
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note import CodatDataContractsDatasetsLegacyBillCreditNote
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note_paged_response_model import CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel
+from codat_python_sdk.model.codat_data_contracts_datasets_legacy_bill_credit_note_push_operation import CodatDataContractsDatasetsLegacyBillCreditNotePushOperation
 
 
 class BillCreditNotesApi(object):
@@ -58,7 +58,7 @@ class BillCreditNotesApi(object):
 
             Keyword Args:
                 timeout_in_minutes (int): [optional]
-                codat_data_contracts_datasets_bill_credit_note (CodatDataContractsDatasetsBillCreditNote): [optional]
+                codat_data_contracts_datasets_legacy_bill_credit_note (CodatDataContractsDatasetsLegacyBillCreditNote): [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -80,7 +80,7 @@ class BillCreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsBillCreditNotePushOperation
+                CodatDataContractsDatasetsLegacyBillCreditNotePushOperation
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -111,9 +111,10 @@ class BillCreditNotesApi(object):
 
         self.companies_company_id_connections_connection_id_push_bill_credit_notes_post = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsBillCreditNotePushOperation,),
+                'response_type': (CodatDataContractsDatasetsLegacyBillCreditNotePushOperation,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/connections/{connectionId}/push/billCreditNotes',
                 'operation_id': 'companies_company_id_connections_connection_id_push_bill_credit_notes_post',
@@ -125,7 +126,7 @@ class BillCreditNotesApi(object):
                     'company_id',
                     'connection_id',
                     'timeout_in_minutes',
-                    'codat_data_contracts_datasets_bill_credit_note',
+                    'codat_data_contracts_datasets_legacy_bill_credit_note',
                 ],
                 'required': [
                     'company_id',
@@ -150,8 +151,8 @@ class BillCreditNotesApi(object):
                         (str,),
                     'timeout_in_minutes':
                         (int,),
-                    'codat_data_contracts_datasets_bill_credit_note':
-                        (CodatDataContractsDatasetsBillCreditNote,),
+                    'codat_data_contracts_datasets_legacy_bill_credit_note':
+                        (CodatDataContractsDatasetsLegacyBillCreditNote,),
                 },
                 'attribute_map': {
                     'company_id': 'companyId',
@@ -162,7 +163,7 @@ class BillCreditNotesApi(object):
                     'company_id': 'path',
                     'connection_id': 'path',
                     'timeout_in_minutes': 'query',
-                    'codat_data_contracts_datasets_bill_credit_note': 'body',
+                    'codat_data_contracts_datasets_legacy_bill_credit_note': 'body',
                 },
                 'collection_format_map': {
                 }
@@ -219,7 +220,7 @@ class BillCreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsBillCreditNote
+                CodatDataContractsDatasetsLegacyBillCreditNote
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -250,9 +251,10 @@ class BillCreditNotesApi(object):
 
         self.companies_company_id_data_bill_credit_notes_bill_credit_note_id_get = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsBillCreditNote,),
+                'response_type': (CodatDataContractsDatasetsLegacyBillCreditNote,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/billCreditNotes/{billCreditNoteId}',
                 'operation_id': 'companies_company_id_data_bill_credit_notes_bill_credit_note_id_get',
@@ -350,7 +352,7 @@ class BillCreditNotesApi(object):
                 async_req (bool): execute request asynchronously
 
             Returns:
-                CodatDataContractsDatasetsBillCreditNotePagedResponseModel
+                CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel
                     If the method is called asynchronously, returns the request
                     thread.
             """
@@ -381,9 +383,10 @@ class BillCreditNotesApi(object):
 
         self.companies_company_id_data_bill_credit_notes_get = _Endpoint(
             settings={
-                'response_type': (CodatDataContractsDatasetsBillCreditNotePagedResponseModel,),
+                'response_type': (CodatDataContractsDatasetsLegacyBillCreditNotePagedResponseModel,),
                 'auth': [
-                    'API Key Auth'
+                    'API Key Auth',
+                    'Codat Login'
                 ],
                 'endpoint_path': '/companies/{companyId}/data/billCreditNotes',
                 'operation_id': 'companies_company_id_data_bill_credit_notes_get',

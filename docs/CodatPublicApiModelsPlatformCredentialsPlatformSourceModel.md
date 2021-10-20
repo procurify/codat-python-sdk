@@ -4,13 +4,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**enabled** | **bool** |  | [optional] 
+**source_type** | [**CodatClientsApiClientContractSourceType**](CodatClientsApiClientContractSourceType.md) |  | [optional] 
 **key** | **str, none_type** |  | [optional] 
 **logo_url** | **str, none_type** |  | [optional] 
 **name** | **str, none_type** |  | [optional] 
-**enabled** | **bool** |  | [optional] 
 **source_id** | **str** |  | [optional] 
 **integration_id** | **str** |  | [optional] 
-**source_type** | [**CodatClientsApiClientContractSourceType**](CodatClientsApiClientContractSourceType.md) |  | [optional] 
 **is_offline_connector** | **bool** |  | [optional] 
 **is_beta** | **bool** |  | [optional] 
 **supported_environments** | [**CodatClientsApiClientContractIntegrationSupportedEnvironments**](CodatClientsApiClientContractIntegrationSupportedEnvironments.md) |  | [optional] 

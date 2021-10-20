@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**companies_company_id_data_financials_balance_sheet_get**](FinancialsApi.md#companies_company_id_data_financials_balance_sheet_get) | **GET** /companies/{companyId}/data/financials/balanceSheet | Gets the latest balance sheet for a company.
-[**companies_company_id_data_financials_cash_flow_statement_get**](FinancialsApi.md#companies_company_id_data_financials_cash_flow_statement_get) | **GET** /companies/{companyId}/data/financials/cashFlowStatement | Gets the latest balance sheet for a company.
+[**companies_company_id_data_financials_cash_flow_statement_get**](FinancialsApi.md#companies_company_id_data_financials_cash_flow_statement_get) | **GET** /companies/{companyId}/data/financials/cashFlowStatement | Gets the latest cash flow statement for a company.
 [**companies_company_id_data_financials_profit_and_loss_get**](FinancialsApi.md#companies_company_id_data_financials_profit_and_loss_get) | **GET** /companies/{companyId}/data/financials/profitAndLoss | Gets the latest profit and loss for a company.
 
 
@@ -17,6 +17,7 @@ Gets the latest balance sheet for a company.
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -39,6 +40,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -83,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -101,11 +108,12 @@ Name | Type | Description  | Notes
 # **companies_company_id_data_financials_cash_flow_statement_get**
 > CodatPublicApiModelsDataCashFlowStatementResponse companies_company_id_data_financials_cash_flow_statement_get(company_id, period_length, periods_to_compare)
 
-Gets the latest balance sheet for a company.
+Gets the latest cash flow statement for a company.
 
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -129,6 +137,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -140,7 +154,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
 
     # example passing only required values which don't have defaults set
     try:
-        # Gets the latest balance sheet for a company.
+        # Gets the latest cash flow statement for a company.
         api_response = api_instance.companies_company_id_data_financials_cash_flow_statement_get(company_id, period_length, periods_to_compare)
         pprint(api_response)
     except codat_python_sdk.ApiException as e:
@@ -149,7 +163,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        # Gets the latest balance sheet for a company.
+        # Gets the latest cash flow statement for a company.
         api_response = api_instance.companies_company_id_data_financials_cash_flow_statement_get(company_id, period_length, periods_to_compare, start_month=start_month)
         pprint(api_response)
     except codat_python_sdk.ApiException as e:
@@ -172,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -195,6 +209,7 @@ Gets the latest profit and loss for a company.
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -217,6 +232,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -261,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 

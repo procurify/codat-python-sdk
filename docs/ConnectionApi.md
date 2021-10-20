@@ -21,6 +21,7 @@ This revokes and removes a data connection from being listed as a company's conn
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -42,6 +43,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -73,7 +80,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -96,6 +103,7 @@ Retrieve a single data source connected to a single company, including its conne
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -118,6 +126,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -149,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -174,6 +188,7 @@ This revokes a company’s access to a data source, but the data connection is s
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -197,6 +212,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -241,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -257,13 +278,14 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **companies_company_id_connections_get**
-> CodatPublicApiModelsCompanyDataConnectionPagedResponseModel companies_company_id_connections_get(company_id, )
+> CodatPublicApiModelsCompanyDataConnectionPagedResponseModel companies_company_id_connections_get(company_id, page)
 
 Retrieve all data sources connected to a single company, including their connection statuses
 
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -287,11 +309,18 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
 
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connection_api.ConnectionApi(api_client)
     company_id = "companyId_example" # str | 
+    page = 1 # int | 
     page_size = 100 # int |  (optional) if omitted the server will use the default value of 100
     query = "query_example" # str |  (optional)
     order_by = "orderBy_example" # str |  (optional)
@@ -299,7 +328,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Retrieve all data sources connected to a single company, including their connection statuses
-        api_response = api_instance.companies_company_id_connections_get(company_id, )
+        api_response = api_instance.companies_company_id_connections_get(company_id, page)
         pprint(api_response)
     except codat_python_sdk.ApiException as e:
         print("Exception when calling ConnectionApi->companies_company_id_connections_get: %s\n" % e)
@@ -308,7 +337,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
     # and optional values
     try:
         # Retrieve all data sources connected to a single company, including their connection statuses
-        api_response = api_instance.companies_company_id_connections_get(company_id, page_size=page_size, query=query, order_by=order_by)
+        api_response = api_instance.companies_company_id_connections_get(company_id, page, page_size=page_size, query=query, order_by=order_by)
         pprint(api_response)
     except codat_python_sdk.ApiException as e:
         print("Exception when calling ConnectionApi->companies_company_id_connections_get: %s\n" % e)
@@ -320,7 +349,7 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_id** | **str**|  |
- **page** | **int**|  | defaults to 1
+ **page** | **int**|  |
  **page_size** | **int**|  | [optional] if omitted the server will use the default value of 100
  **query** | **str**|  | [optional]
  **order_by** | **str**|  | [optional]
@@ -331,7 +360,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
@@ -356,6 +385,7 @@ This creates a new data connection in the PendingAuth state. You can get a list 
 ### Example
 
 * Api Key Authentication (API Key Auth):
+* OAuth Authentication (Codat Login):
 ```python
 import time
 import codat_python_sdk
@@ -378,6 +408,12 @@ configuration.api_key['API Key Auth'] = 'YOUR_API_KEY'
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['API Key Auth'] = 'Bearer'
+
+# Configure OAuth2 access token for authorization: Codat Login
+configuration = codat_python_sdk.Configuration(
+    host = "http://localhost"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
 with codat_python_sdk.ApiClient(configuration) as api_client:
@@ -418,7 +454,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[API Key Auth](../README.md#API Key Auth)
+[API Key Auth](../README.md#API Key Auth), [Codat Login](../README.md#Codat Login)
 
 ### HTTP request headers
 
