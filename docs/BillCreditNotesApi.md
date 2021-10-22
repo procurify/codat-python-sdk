@@ -119,6 +119,11 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
                         id="id_example",
                         company_name="company_name_example",
                     ),
+                    project_ref=CodatDataContractsDatasetsProjectRef(
+                        id="id_example",
+                        name="name_example",
+                    ),
+                    is_billed_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
                     is_rebilled_to=CodatDataContractsDatasetsAccountsPayableIsBilledToType("Unknown"),
                 ),
             ),

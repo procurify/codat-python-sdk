@@ -44,6 +44,7 @@ from codat_python_sdk.api.invoices_api import InvoicesApi
 from codat_python_sdk.api.items_api import ItemsApi
 from codat_python_sdk.api.journals_api import JournalsApi
 from codat_python_sdk.api.metrics_api import MetricsApi
+from codat_python_sdk.api.payment_methods_api import PaymentMethodsApi
 from codat_python_sdk.api.payments_api import PaymentsApi
 from codat_python_sdk.api.profile_api import ProfileApi
 from codat_python_sdk.api.purchase_orders_api import PurchaseOrdersApi

@@ -120,10 +120,15 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
                             name="name_example",
                         ),
                     ],
+                    project_ref=CodatDataContractsDatasetsProjectRef(
+                        id="id_example",
+                        name="name_example",
+                    ),
                     customer_ref=CodatDataContractsDatasetsCustomerRef(
                         id="id_example",
                         company_name="company_name_example",
                     ),
+                    is_billed_to=CodatDataContractsDatasetsAccountsReceivableIsBilledToType("Unknown"),
                     is_rebilled_to=CodatDataContractsDatasetsAccountsReceivableIsBilledToType("Unknown"),
                 ),
             ),
@@ -308,10 +313,15 @@ with codat_python_sdk.ApiClient(configuration) as api_client:
                             name="name_example",
                         ),
                     ],
+                    project_ref=CodatDataContractsDatasetsProjectRef(
+                        id="id_example",
+                        name="name_example",
+                    ),
                     customer_ref=CodatDataContractsDatasetsCustomerRef(
                         id="id_example",
                         company_name="company_name_example",
                     ),
+                    is_billed_to=CodatDataContractsDatasetsAccountsReceivableIsBilledToType("Unknown"),
                     is_rebilled_to=CodatDataContractsDatasetsAccountsReceivableIsBilledToType("Unknown"),
                 ),
             ),

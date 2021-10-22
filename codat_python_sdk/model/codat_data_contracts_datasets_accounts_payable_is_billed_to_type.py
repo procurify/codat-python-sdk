@@ -55,6 +55,7 @@ class CodatDataContractsDatasetsAccountsPayableIsBilledToType(ModelSimple):
             'UNKNOWN': "Unknown",
             'NOTAPPLICABLE': "NotApplicable",
             'CUSTOMER': "Customer",
+            'PROJECT': "Project",
         },
     }
 
@@ -112,10 +113,10 @@ class CodatDataContractsDatasetsAccountsPayableIsBilledToType(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["Unknown", "NotApplicable", "Customer", ]  # noqa: E501
+            args[0] (str):, must be one of ["Unknown", "NotApplicable", "Customer", "Project", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["Unknown", "NotApplicable", "Customer", ]  # noqa: E501
+            value (str):, must be one of ["Unknown", "NotApplicable", "Customer", "Project", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
@@ -202,10 +203,10 @@ class CodatDataContractsDatasetsAccountsPayableIsBilledToType(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["Unknown", "NotApplicable", "Customer", ]  # noqa: E501
+            args[0] (str):, must be one of ["Unknown", "NotApplicable", "Customer", "Project", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["Unknown", "NotApplicable", "Customer", ]  # noqa: E501
+            value (str):, must be one of ["Unknown", "NotApplicable", "Customer", "Project", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
