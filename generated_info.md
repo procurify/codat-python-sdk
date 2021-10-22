@@ -220,6 +220,8 @@ Class | Method | HTTP request | Description
 *JournalsApi* | [**companies_company_id_data_journal_entries_get**](docs/JournalsApi.md#companies_company_id_data_journal_entries_get) | **GET** /companies/{companyId}/data/journalEntries | Gets the latest journal entries for a company, with pagination
 *JournalsApi* | [**companies_company_id_data_journal_entries_journal_entry_id_get**](docs/JournalsApi.md#companies_company_id_data_journal_entries_journal_entry_id_get) | **GET** /companies/{companyId}/data/journalEntries/{journalEntryId} | Gets a single JournalEntry corresponding to the supplied Id
 *MetricsApi* | [**metrics_companies_get**](docs/MetricsApi.md#metrics_companies_get) | **GET** /metrics/companies | 
+*PaymentMethodsApi* | [**companies_company_id_data_payment_methods_get**](docs/PaymentMethodsApi.md#companies_company_id_data_payment_methods_get) | **GET** /companies/{companyId}/data/paymentMethods | Gets the payment methods for a given company.
+*PaymentMethodsApi* | [**companies_company_id_data_payment_methods_payment_method_id_get**](docs/PaymentMethodsApi.md#companies_company_id_data_payment_methods_payment_method_id_get) | **GET** /companies/{companyId}/data/paymentMethods/{paymentMethodId} | Gets the specified payment method for a given company.
 *PaymentsApi* | [**companies_company_id_connections_connection_id_push_payments_post**](docs/PaymentsApi.md#companies_company_id_connections_connection_id_push_payments_post) | **POST** /companies/{companyId}/connections/{connectionId}/push/payments | Posts a new payment to the accounting package for a given company.
 *PaymentsApi* | [**companies_company_id_data_payments_get**](docs/PaymentsApi.md#companies_company_id_data_payments_get) | **GET** /companies/{companyId}/data/payments | Gets the latest payments for a company, with pagination
 *PaymentsApi* | [**companies_company_id_data_payments_payment_id_get**](docs/PaymentsApi.md#companies_company_id_data_payments_payment_id_get) | **GET** /companies/{companyId}/data/payments/{paymentId} | 
@@ -469,7 +471,13 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsPaymentLine](docs/CodatDataContractsDatasetsPaymentLine.md)
  - [CodatDataContractsDatasetsPaymentLineLink](docs/CodatDataContractsDatasetsPaymentLineLink.md)
  - [CodatDataContractsDatasetsPaymentLinkType](docs/CodatDataContractsDatasetsPaymentLinkType.md)
+ - [CodatDataContractsDatasetsPaymentMethod](docs/CodatDataContractsDatasetsPaymentMethod.md)
+ - [CodatDataContractsDatasetsPaymentMethodPagedResponseHrefModel](docs/CodatDataContractsDatasetsPaymentMethodPagedResponseHrefModel.md)
+ - [CodatDataContractsDatasetsPaymentMethodPagedResponseLinksModel](docs/CodatDataContractsDatasetsPaymentMethodPagedResponseLinksModel.md)
+ - [CodatDataContractsDatasetsPaymentMethodPagedResponseModel](docs/CodatDataContractsDatasetsPaymentMethodPagedResponseModel.md)
  - [CodatDataContractsDatasetsPaymentMethodRef](docs/CodatDataContractsDatasetsPaymentMethodRef.md)
+ - [CodatDataContractsDatasetsPaymentMethodStatus](docs/CodatDataContractsDatasetsPaymentMethodStatus.md)
+ - [CodatDataContractsDatasetsPaymentMethodType](docs/CodatDataContractsDatasetsPaymentMethodType.md)
  - [CodatDataContractsDatasetsPaymentPagedResponseHrefModel](docs/CodatDataContractsDatasetsPaymentPagedResponseHrefModel.md)
  - [CodatDataContractsDatasetsPaymentPagedResponseLinksModel](docs/CodatDataContractsDatasetsPaymentPagedResponseLinksModel.md)
  - [CodatDataContractsDatasetsPaymentPagedResponseModel](docs/CodatDataContractsDatasetsPaymentPagedResponseModel.md)
@@ -478,6 +486,7 @@ Class | Method | HTTP request | Description
  - [CodatDataContractsDatasetsPhoneType](docs/CodatDataContractsDatasetsPhoneType.md)
  - [CodatDataContractsDatasetsProfitAndLossReport](docs/CodatDataContractsDatasetsProfitAndLossReport.md)
  - [CodatDataContractsDatasetsProfitAndLossReportingType](docs/CodatDataContractsDatasetsProfitAndLossReportingType.md)
+ - [CodatDataContractsDatasetsProjectRef](docs/CodatDataContractsDatasetsProjectRef.md)
  - [CodatDataContractsDatasetsPurchaseOrder](docs/CodatDataContractsDatasetsPurchaseOrder.md)
  - [CodatDataContractsDatasetsPurchaseOrderLineItem](docs/CodatDataContractsDatasetsPurchaseOrderLineItem.md)
  - [CodatDataContractsDatasetsPurchaseOrderPagedResponseHrefModel](docs/CodatDataContractsDatasetsPurchaseOrderPagedResponseHrefModel.md)
